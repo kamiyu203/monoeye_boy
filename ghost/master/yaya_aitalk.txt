@@ -15,7 +15,7 @@
 // 	if rank == 1 {AYLex_DEFAULT_SURFACE[0] = 2}
 	// Dランクならデフォルトを目逸らしに&専用トークのみ
 	if rank == 0 {
-// 		AYLex_DEFAULT_SURFACE[0] = 3
+		AYLex_DEFAULT_SURFACE[0] = 3
 		RankD_talk
 	} else {
 		// 5分の1でランクトーク(フラグや専用トーク)へ
@@ -41,6 +41,9 @@
 //******************************************************************************
 Ru_check {
 	case rank {
+		when 0 {
+			if flag_talk == 1 {ru_flag = 1}
+		}
 		when 1 {
 			if flag_talk == 1 && 累積起動時間 >= 2 || 起動回数 >= 5 {ru_flag = 1}
 		}
