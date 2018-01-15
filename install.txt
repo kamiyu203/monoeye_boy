@@ -1,4 +1,4 @@
 charset, Shift_JIS
 type,ghost
 name,’PŠá’jŽq
-directory,Monoeye_Boy
+directory,monoeye_boy
