@@ -20,6 +20,11 @@
 	} else {
 		// 5分の1でランクトーク(フラグや専用トーク)へ
 		if _random == 1 {Flagtalk}
+		if _random == 5 {
+			case GetSeasonSlot {
+			when "冬"{冬トーク}
+			}
+		}
 		
 		// Bランク 名前イベント
 		if rank >=2 && tell_name == 0 {名前入力起動('Bランク')}
@@ -29,9 +34,7 @@
 		// ランク上がると出るやつ
 		Rank_talk
 		
-		case GetSeasonSlot {
-			when "冬"{冬トーク}
-		}
+		
 		
 	}
 }
