@@ -209,9 +209,9 @@ OnInstallComplete
 	^y‚»‚êˆÈŠOzFyƒ^ƒCƒv•s–¾
 	‰üs‚È‚µ^FAƒCƒ“ƒXƒg[ƒ‹Š®—¹z
 	‰üs‘½‚ß^Fw%(reference[1])x
-// 	‰üs‘½‚ß^ySTRLEN(ref_id) > 0zFØ‚è‘Ö‚¦‚Ü‚·‚©H
-// 	—ƒƒjƒ…[y’¼‘OzFØ‚è‘Ö‚¦‚ébOnAYATEMPLATE.InstallChangeb%(ref_id)
-// 	—ƒƒjƒ…[y’¼‘OzFØ‚è‘Ö‚¦‚È‚¢bMenu_CANCEL
+ 	#‰üs‘½‚ß^ySTRLEN(ref_id) > 0zFØ‚è‘Ö‚¦‚Ü‚·‚©H
+ 	#—ƒƒjƒ…[y’¼‘OzFØ‚è‘Ö‚¦‚ébOnAYATEMPLATE.InstallChangeb%(ref_id)
+ 	#—ƒƒjƒ…[y’¼‘OzFØ‚è‘Ö‚¦‚È‚¢bMenu_CANCEL
 	">>
 }
 
