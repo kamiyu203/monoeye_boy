@@ -17,7 +17,7 @@ On_username
 //------------------------------------------------------------------------------
 On_homeurl
 {
-	"https://www.dropbox.com/sh/6sn2c96p4ulwes4/AABOt1ARS5T5Q7y-0-CT9tY8a?dl=0"
+	"https://raw.githubusercontent.com/kamiyup/monoeye_boy/master/"
 }
 
 //------------------------------------------------------------------------------
