@@ -13,5 +13,5 @@ seriko.use_self_alpha,1
 sakura.balloon.offsetx,50
 sakura.balloon.offsety,80
 
-kero.balloon.offsetx,25
-kero.balloon.offsety,255
+kero.balloon.offsetx,30
+kero.balloon.offsety,260
