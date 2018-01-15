@@ -1,0 +1,17 @@
+charset,Shift_JIS
+
+craftman,Kamiyu
+craftmanw,‚©‚Ý‚ä
+craftmanurl,http://nekuraphilia.hatenablog.jp
+
+id,master
+name,master
+type,shell
+
+seriko.use_self_alpha,1
+
+sakura.balloon.offsetx,50
+sakura.balloon.offsety,80
+
+kero.balloon.offsetx,25
+kero.balloon.offsety,255

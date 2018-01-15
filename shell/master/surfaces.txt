@@ -1,0 +1,203 @@
+charset,Shift_JIS
+
+descript
+{
+version,1
+}
+
+// 当たり判定
+surface0-25,30,!10
+{
+collision0,60,20,190,70,Head
+collision1,90,75,140,145,Face
+collision2,60,220,160,270,Chest
+collision3,160,95,175,120,Ear
+//左肩、右肩
+collision4,40,180,70,220,Shoulder
+collision5,160,180,220,220,Shoulder
+}
+
+// カーソル設定
+sakura.cursor
+{
+mouseup0,Head,system:hand
+mouseup1,Bust,system:hand
+}
+
+// サーフェス設定
+//**************************************
+// ポーズ
+//**************************************
+// ボディ
+// surface0-20,!10
+// {
+// 	element0,base,body.png,0,0
+// 	element1,overlay,base_clothes.png,0,0
+// 	element2,overlay,eye_base.png,0,0
+// 
+// 	animation110.interval,bind
+// 	animation110.pattern0,overlay,110,0,0,0
+// 	animation111.interval,bind
+// 	animation111.pattern0,overlay,111,0,0,0
+// }
+
+// 腕を後ろに
+// surface.append0-4,7-8,11-12,14-17,19,20
+// {
+// 	element10,overlay,arm1.png,0,0
+// }
+// 腕を前に
+// surface.append5-6,9,13,18
+// {
+// 	element10,overlay,arm2.png,0,0
+// 	
+// 	animation112.interval,bind
+// 	animation112.pattern0,overlay,112,0,0,0
+// }
+
+//**************************************
+// 表情
+//**************************************
+
+
+//**************************************
+// 着せ替え
+//**************************************
+// surface110	// ピアス標準
+// {
+// 	element0,base,piace.png,0,0
+// }
+// surface111	// ネックレス標準
+// {
+// 	element0,base,necklace.png,0,0
+// }
+// surface112	// 時計標準
+// {
+// 	element0,base,watch.png,0,0
+// }
+
+//**************************************
+// アニメーション設定
+//**************************************
+// アニメーション設定0番 瞬き
+// 瞬き通常
+surface.append0,2-5,16,17,22,23,25
+{
+	animation0.interval,random,3
+	animation0.pattern0,overlay,1000,50,0,0
+	animation0.pattern1,overlay,1001,50,0,0
+	animation0.pattern2,overlay,1000,50,0,0
+	animation0.pattern3,overlay,-1,50,0,0
+}
+
+surface1000
+{
+	element0,base,eye2.png,0,0
+}
+
+surface1001
+{
+	element0,base,eye_cl.png,0,0
+}
+
+// 瞬きジト目
+surface.append8,9,11,14,15,18
+{
+	animation0.interval,random,3
+	animation0.pattern0,overlay,1010,50,0,0
+	animation0.pattern1,overlay,1001,50,0,0
+	animation0.pattern2,overlay,1010,50,0,0
+	animation0.pattern3,overlay,-1,50,0,0
+}
+
+surface1010
+{
+	element0,base,eye_jito2.png,0,0
+}
+
+// アニメーション設定1番 口パク
+// 口パク1(mouse_niko1)
+surface.append0,1,6,7,19,20,22,23,25
+{
+	animation1.interval,talk,1
+	animation1.pattern0,overlay,1050.png,0,0,0
+	animation1.pattern1,overlay,-1,150,0,0
+	animation1.pattern2,overlay,1051,150,0,0
+	animation1.pattern3,overlay,-1,150,0,0
+}
+surface1050
+{
+	element0,base,mouse_niko2.png,0,0
+}
+surface1051
+{
+	element0,base,mouse_m2.png,0,0
+}
+
+// 口パク2(mouse_m)
+surface.append2-4,8,11,14-16,21,24
+{
+	animation1.interval,talk,1
+	animation1.pattern0,overlay,1060.png,0,0,0
+	animation1.pattern1,overlay,-1,150,0,0
+	animation1.pattern2,overlay,1061,150,0,0
+	animation1.pattern3,overlay,-1,150,0,0
+}
+surface1060
+{
+	element0,base,mouse_m2.png,0,0
+}
+surface1061
+{
+	element0,base,mouse_m3.png,0,0
+}
+
+// 口パク3(mouse_mm)
+surface.append9,17,18,30
+{
+	animation1.interval,talk,1
+	animation1.pattern0,overlay,1070.png,0,0,0
+	animation1.pattern1,overlay,-1,150,0,0
+	animation1.pattern2,overlay,1071,150,0,0
+	animation1.pattern3,overlay,-1,150,0,0
+}
+surface1070
+{
+	element0,base,mouse_mm2.png,0,0
+}
+surface1071
+{
+	element0,base,mouse_mm3.png,0,0
+}
+
+// 口パク4(mouse_nya1)
+surface.append12,13
+{
+	animation1.interval,talk,1
+	animation1.pattern0,overlay,1080.png,0,0,0
+	animation1.pattern1,overlay,-1,150,0,0
+	animation1.pattern2,overlay,1081,150,0,0
+	animation1.pattern3,overlay,-1,150,0,0
+}
+surface1080
+{
+	element0,base,mouse_nya2.png,0,0
+}
+surface1081
+{
+	element0,base,mouse_nya3.png,0,0
+}
+
+// 口パク5(mouse_mm2)
+surface.append5
+{
+	animation1.interval,talk,1
+	animation1.pattern0,overlay,1090,0,0,0
+	animation1.pattern1,overlay,-1,150,0,0
+	animation1.pattern2,overlay,1061,150,0,0
+	animation1.pattern3,overlay,-1,150,0,0
+}
+surface1090
+{
+	element0,base,mouse_mm1.png,0,0
+}
