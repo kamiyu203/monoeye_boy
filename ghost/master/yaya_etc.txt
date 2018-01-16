@@ -109,8 +109,8 @@
 //ランダムトーク
 キー入力C
 {
-	if rank >= 2 {'\![open,communicatebox]'}
-// 	'\![open,communicatebox]'
+	if rank >= 2 {Menu_Communicate}
+//	Menu_Communicate
 }
 
 //メニュー

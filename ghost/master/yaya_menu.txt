@@ -13,16 +13,18 @@ OpenMenu
 	<<"
 	—‰üs‘½‚ßƒƒjƒ…[yrank==0zFŠÏ@‚·‚ébMenu_AITALK
 	—‰üs‘½‚ßƒƒjƒ…[yrank!=0zF‰½‚©˜b‚µ‚ÄbMenu_AITALK
-	—ƒƒjƒ…[yrank>1zF˜b‚µ‚©‚¯‚ébMenu_USERCOMSTART
-	@‰üs‘½‚ßƒƒjƒ…[yru_flag==1zFƒ‰ƒ“ƒNƒAƒbƒvbRankup_talk
-	@ƒƒjƒ…[yrank==1 && ru_flag==1zF”Ş‚Æ‚Ìv‚¢obOmoide
-	@ƒƒjƒ…[yrank>=2 && ru_flag==1zF^l‚Æ‚Ìv‚¢obOmoide
-	@‰üs‘½‚ßƒƒjƒ…[yrank==1 && ru_flag==0zF”Ş‚Æ‚Ìv‚¢obOmoide
-	@‰üs‘½‚ßƒƒjƒ…[yrank>=2 && ru_flag==0zF^l‚Æ‚Ìv‚¢obOmoide
+# 	—ƒƒjƒ…[yrank>=2zF˜b‚µ‚©‚¯‚ébMenu_USERCOMSTART
+	—ƒƒjƒ…[yrank>=2zF˜b‚µ‚©‚¯‚ébMenu_Communicate
+	—‰üs‘½‚ßƒƒjƒ…[yru_flag==1zFƒ‰ƒ“ƒNƒAƒbƒvbRankup_talk
+	—ƒƒjƒ…[yrank==1 && ru_flag==1zF”Ş‚Æ‚Ìv‚¢obOmoide
+	—ƒƒjƒ…[yrank>=2 && ru_flag==1zF^l‚Æ‚Ìv‚¢obOmoide
+	—‰üs‘½‚ßƒƒjƒ…[yrank==1 && ru_flag==0zF”Ş‚Æ‚Ìv‚¢obOmoide
+	—‰üs‘½‚ßƒƒjƒ…[yrank>=2 && ru_flag==0zF^l‚Æ‚Ìv‚¢obOmoide
 	—‰üs‘½‚ßƒƒjƒ…[Fƒg[ƒN•p“x‚Ìİ’èbMenu_TALKINTERVAL
 	—ƒƒjƒ…[ytell_name==1zFŒÄ‚Ñ–¼‚ğ•Ï‚¦‚ébMenu_TELLNAME
 
 	—‰üs‘½‚ßƒƒjƒ…[F•Â‚¶‚ébMenu_CANCEL
+	\e:eval=kenashi=0,kirai=0
 	">>
 }
 

@@ -150,8 +150,8 @@ AYALilithEX.TextOnlyTranslatorFunc
 	_text = RE_REPLACE(_text,'[（(](ユーザー*|ユーザー*名|ユーザー*さん)[)）]',username)
 	
 	if ! _argv[1] {
-		_text = RE_REPLACEEX(_text, '([、…])(?=.)', '$1\\w5')
-		_text = RE_REPLACEEX(_text, '([。！？」』])(?=[^。、！？」』])', '$1\\w9')
+		_text = RE_REPLACEEX(_text, '([、…])(?=.)', '$1\\w7') // デフォ5 設定7
+		_text = RE_REPLACEEX(_text, '([。！？」』])(?=[^。、！？」』])', '$1\\w9') 
 	}
 	_text
 }
