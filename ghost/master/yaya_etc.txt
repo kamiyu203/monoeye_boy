@@ -110,7 +110,7 @@
 キー入力C
 {
 	if rank >= 2 {Menu_Communicate}
-//	Menu_Communicate
+	Menu_USERCOMSTART
 }
 
 //メニュー
