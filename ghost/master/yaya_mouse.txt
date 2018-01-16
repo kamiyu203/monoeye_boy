@@ -213,14 +213,14 @@
 
 ダブルクリック0
 {
-	if SHIORI3FW.IsChain {
-		"\![raise,OnAITalk]"
-	} else {OpenMenu}
+// 	if SHIORI3FW.IsChain {
+// 		"\![raise,OnAITalk]"
+// 	} else {OpenMenu}
+	OpenMenu
 }
 
 ダブルクリック0Shoulder
 {
-	
 	"\![raise,OnAITalk]"
 }
 

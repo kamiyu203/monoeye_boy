@@ -65,8 +65,9 @@ Flagtalk {
 	}
 }
 
-OnFlagtalk {
+OnFlagtalk : array {
 	flag_talk = 1
+	Ru_check
 }
 
 //******************************************************************************
