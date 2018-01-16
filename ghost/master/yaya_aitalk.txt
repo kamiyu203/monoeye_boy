@@ -22,7 +22,7 @@ OnAITalk
 
 ランダムトーク通常 : array
 {	
-	_random = RAND(5)
+	_random = RAND(3)
 	
 	// 5分の1でランクトーク(フラグや専用トーク)へ
 	if _random == 1 {Flagtalk}
