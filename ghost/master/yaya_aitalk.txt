@@ -8,11 +8,16 @@
 //******************************************************************************
 OnAITalk
 {
-	Ru_check()
+	Ru_check
 	if rank == 0 {
 		AYLex_DEFAULT_SURFACE[0] = 3
 		RankD_talk
-		} else {RandomTalk}
+		} elseif SHIORI3FW.IsChain {
+		ChainTalk
+	}
+	else {
+		RandomTalk
+	}
 }
 
 ランダムトーク通常 : array
@@ -65,7 +70,7 @@ Flagtalk {
 	}
 }
 
-OnFlagtalk : array {
+OnFlagtalk {
 	flag_talk = 1
 	Ru_check
 }
@@ -401,7 +406,8 @@ Random_talk : nonoverlap {
 	真0：バレンタインだよ、(ユーザ)さん。
 	チョコ、貰えた？
 	ユ：聞くな。
-	クリック待ち真1：だろうと思って。
+	=====
+	真1：…だろうと思って。
 	\n[half]……\s[0]はい、これ。
 	ユ：ありがとう…！
 	真6：貰いすぎて余ったから、あげる。
