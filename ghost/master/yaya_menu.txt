@@ -13,7 +13,6 @@ OpenMenu
 	<<"
 	＠改行多めメニュー【rank==0】：観察する｜Menu_AITALK
 	＠改行多めメニュー【rank!=0】：何か話して｜Menu_AITALK
-# 	＠メニュー【rank>=2】：話しかける｜Menu_USERCOMSTART
 	＠メニュー【rank>=2】：話しかける｜Menu_Communicate
 	＠改行多めメニュー【ru_flag==1】：ランクアップ｜Rankup_talk
 	＠メニュー【rank==1 && ru_flag==1】：彼との思い出｜Omoide
