@@ -157,7 +157,7 @@ Omoide {
 	<<"
 	^1F‚»‚¤‚¢‚¦‚ÎA‚±‚ñ‚È‚±‚Æ‚à‚ ‚Á‚½‚æ‚ËB\w5\n
 	@ƒƒjƒ…[yrank>=1zFo‰ï‚¢bOmoide_DtoC
-	@ƒƒjƒ…[yrank>=2zF”Þ‚Ì³‘Ì‚ÍcbOmoide_CtoB
+	@ƒƒjƒ…[yrank>=2zF”Þ‚Ì³‘ÌbOmoide_CtoB
 	@ƒƒjƒ…[yrank>=3zFƒ‚ƒfƒ‹‚É‚È‚Á‚½——RbOmoide_BtoA
 	@‰üs‘½‚ßƒƒjƒ…[F–ß‚ébOpenMenu
 	">>
