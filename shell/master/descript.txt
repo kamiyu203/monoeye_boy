@@ -15,3 +15,11 @@ sakura.balloon.offsety,80
 
 kero.balloon.offsetx,30
 kero.balloon.offsety,260
+
+sakura.bindoption.group,服,mustselect
+sakura.bindgroup100.name,服,いつもの服
+sakura.bindgroup101.name,服,白シャツ
+sakura.bindgroup102.name,服,セーター
+sakura.bindgroup100.default,1
+
+sakura.menu,auto

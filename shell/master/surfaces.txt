@@ -6,7 +6,7 @@ version,1
 }
 
 // 当たり判定
-surface0-25,30,!10
+surface0-26,30,!10
 {
 collision0,60,20,190,70,Head
 collision1,90,75,140,145,Face
@@ -21,81 +21,228 @@ collision5,160,180,220,220,Shoulder
 sakura.cursor
 {
 mouseup0,Head,system:hand
-mouseup1,Bust,system:hand
+mouseup1,Chest,system:hand
 }
 
 // サーフェス設定
 //**************************************
-// ポーズ
-//**************************************
 // ボディ
-// surface0-20,!10
-// {
-// 	element0,base,body.png,0,0
-// 	element1,overlay,base_clothes.png,0,0
-// 	element2,overlay,eye_base.png,0,0
-// 
-// 	animation110.interval,bind
-// 	animation110.pattern0,overlay,110,0,0,0
-// 	animation111.interval,bind
-// 	animation111.pattern0,overlay,111,0,0,0
-// }
+//**************************************
+surface.append0-30,!10,!26-29
+{
+	element0,base,body,0,0
+	element1,overlay,pants01,0,0
+	element2,overlay,hair01,0,0
+	
+	animation100.interval,bind
+	animation100.pattern0,add,3000,0,0,0
+	
+	animation101.interval,bind
+	animation101.pattern0,add,3001,0,0,0
+	
+	animation102.interval,bind
+	animation102.pattern0,add,3002,0,0,0
+}
 
-// 腕を後ろに
-// surface.append0-4,7-8,11-12,14-17,19,20
-// {
-// 	element10,overlay,arm1.png,0,0
-// }
-// 腕を前に
-// surface.append5-6,9,13,18
-// {
-// 	element10,overlay,arm2.png,0,0
-// 	
-// 	animation112.interval,bind
-// 	animation112.pattern0,overlay,112,0,0,0
-// }
+surface.append26
+{
+	element0,base,body,0,0
+	element1,overlay,pants01,0,0
+	element2,overlay,hair01,0,0
+	
+	animation100.interval,bind
+	animation100.pattern0,add,3000,0,0,0
+	animation100.pattern1,add,3010,0,0,0
+	
+	animation101.interval,bind
+	animation101.pattern0,add,3001,0,0,0
+	animation101.pattern1,add,3011,0,0,0
+	
+	animation102.interval,bind
+	animation102.pattern0,add,3002,0,0,0
+	animation102.pattern1,add,3012,0,0,0
+}
+
+surface3000	// いつもの秋服
+{
+	element0,base,cos01.png,0,0
+	element1,overlay,necklace01.png,0,0
+	element2,overlay,piace01.png,0,0
+}
+surface3010
+{
+	element0,overlay,arm2_base,0,0
+	element1,overlay,arm2_cos01,0,0
+	element2,overlay,watch,0,0
+}
+
+surface3001	// 白シャツ
+{
+	element0,base,cos02,0,0
+	element1,overlay,piace01,0,0
+}
+surface3011
+{
+	element0,overlay,arm2_base,0,0
+	element1,overlay,arm2_cos02,0,0
+	element2,overlay,watch,0,0
+}
+
+surface3002	// セーター
+{
+	element0,base,cos03,0,0
+	element1,overlay,piace02,0,0
+}
+surface3012
+{
+	element0,overlay,arm2_base,0,0
+	element1,overlay,arm2_cos03,0,0
+}
 
 //**************************************
 // 表情
 //**************************************
-
-
-//**************************************
-// 着せ替え
-//**************************************
-// surface110	// ピアス標準
+surface0
+{
+    element5,overlay,surface1000,0,0
+}
+surface1
+{
+    element5,overlay,surface1001,0,0
+}
+surface2
+{
+    element5,overlay,surface1002,0,0
+}
+surface3
+{
+    element5,overlay,surface1003,0,0
+}
+surface4
+{
+    element5,overlay,surface1004,0,0
+}
+surface5
+{
+    element5,overlay,surface1005,0,0
+}
+surface6
+{
+    element5,overlay,surface1006,0,0
+}
+surface7
+{
+    element5,overlay,surface1007,0,0
+}
+surface8
+{
+    element5,overlay,surface1008,0,0
+}
+surface9
+{
+    element5,overlay,surface1009,0,0
+}
+surface11
+{
+    element5,overlay,surface1011,0,0
+}
+surface12
+{
+    element5,overlay,surface1012,0,0
+}
+surface13
+{
+    element5,overlay,surface1013,0,0
+}
+surface14
+{
+    element5,overlay,surface1014,0,0
+}
+surface15
+{
+    element5,overlay,surface1015,0,0
+}
+surface16
+{
+    element5,overlay,surface1016,0,0
+}
+surface17
+{
+    element5,overlay,surface1017,0,0
+}
+surface18
+{
+    element5,overlay,surface1018,0,0
+}
+surface19
+{
+    element5,overlay,surface1019,0,0
+}
+surface20
+{
+    element5,overlay,surface1020,0,0
+}
+surface21
+{
+    element5,overlay,surface1021,0,0
+}
+surface22
+{
+    element5,overlay,surface1022,0,0
+}
+surface23
+{
+    element5,overlay,surface1023,0,0
+}
+surface24
+{
+    element5,overlay,surface1024,0,0
+}
+surface25
+{
+    element5,overlay,surface1025,0,0
+}
+surface26
+{
+    element5,overlay,surface1000,0,0
+}
+// surface27
 // {
-// 	element0,base,piace.png,0,0
+//     element5,overlay,surface1001,0,0
 // }
-// surface111	// ネックレス標準
+// surface28
 // {
-// 	element0,base,necklace.png,0,0
+//     element5,overlay,surface1019,0,0
 // }
-// surface112	// 時計標準
+// surface29
 // {
-// 	element0,base,watch.png,0,0
+//     element5,overlay,surface1022,0,0
 // }
+surface30
+{
+    element5,overlay,surface1030,0,0
+}
 
 //**************************************
 // アニメーション設定
 //**************************************
 // アニメーション設定0番 瞬き
 // 瞬き通常
-surface.append0,2-5,16,17,22,23,25
+surface.append0,2-5,16,17,22,23,25,26
 {
 	animation0.interval,random,3
-	animation0.pattern0,overlay,1000,50,0,0
-	animation0.pattern1,overlay,1001,50,0,0
-	animation0.pattern2,overlay,1000,50,0,0
+	animation0.pattern0,overlay,2000,50,0,0
+	animation0.pattern1,overlay,2001,50,0,0
+	animation0.pattern2,overlay,2000,50,0,0
 	animation0.pattern3,overlay,-1,50,0,0
 }
 
-surface1000
+surface2000
 {
 	element0,base,eye2.png,0,0
 }
 
-surface1001
+surface2001
 {
 	element0,base,eye_cl.png,0,0
 }
@@ -104,32 +251,32 @@ surface1001
 surface.append8,9,11,14,15,18
 {
 	animation0.interval,random,3
-	animation0.pattern0,overlay,1010,50,0,0
-	animation0.pattern1,overlay,1001,50,0,0
-	animation0.pattern2,overlay,1010,50,0,0
+	animation0.pattern0,overlay,2010,50,0,0
+	animation0.pattern1,overlay,2001,50,0,0
+	animation0.pattern2,overlay,2010,50,0,0
 	animation0.pattern3,overlay,-1,50,0,0
 }
 
-surface1010
+surface2010
 {
 	element0,base,eye_jito2.png,0,0
 }
 
 // アニメーション設定1番 口パク
 // 口パク1(mouse_niko1)
-surface.append0,1,6,7,19,20,22,23,25
+surface.append0,1,6,7,19,20,22,23,25,26
 {
 	animation1.interval,talk,1
-	animation1.pattern0,overlay,1050.png,0,0,0
+	animation1.pattern0,overlay,2050.png,0,0,0
 	animation1.pattern1,overlay,-1,150,0,0
-	animation1.pattern2,overlay,1051,150,0,0
+	animation1.pattern2,overlay,2051,150,0,0
 	animation1.pattern3,overlay,-1,150,0,0
 }
-surface1050
+surface2050
 {
 	element0,base,mouse_niko2.png,0,0
 }
-surface1051
+surface2051
 {
 	element0,base,mouse_m2.png,0,0
 }
@@ -138,16 +285,16 @@ surface1051
 surface.append2-4,8,11,14-16,21,24
 {
 	animation1.interval,talk,1
-	animation1.pattern0,overlay,1060.png,0,0,0
+	animation1.pattern0,overlay,2060.png,0,0,0
 	animation1.pattern1,overlay,-1,150,0,0
-	animation1.pattern2,overlay,1061,150,0,0
+	animation1.pattern2,overlay,2061,150,0,0
 	animation1.pattern3,overlay,-1,150,0,0
 }
-surface1060
+surface2060
 {
 	element0,base,mouse_m2.png,0,0
 }
-surface1061
+surface2061
 {
 	element0,base,mouse_m3.png,0,0
 }
@@ -156,16 +303,16 @@ surface1061
 surface.append9,17,18,30
 {
 	animation1.interval,talk,1
-	animation1.pattern0,overlay,1070.png,0,0,0
+	animation1.pattern0,overlay,2070.png,0,0,0
 	animation1.pattern1,overlay,-1,150,0,0
-	animation1.pattern2,overlay,1071,150,0,0
+	animation1.pattern2,overlay,2071,150,0,0
 	animation1.pattern3,overlay,-1,150,0,0
 }
-surface1070
+surface2070
 {
 	element0,base,mouse_mm2.png,0,0
 }
-surface1071
+surface2071
 {
 	element0,base,mouse_mm3.png,0,0
 }
@@ -174,16 +321,16 @@ surface1071
 surface.append12,13
 {
 	animation1.interval,talk,1
-	animation1.pattern0,overlay,1080.png,0,0,0
+	animation1.pattern0,overlay,2080.png,0,0,0
 	animation1.pattern1,overlay,-1,150,0,0
-	animation1.pattern2,overlay,1081,150,0,0
+	animation1.pattern2,overlay,2081,150,0,0
 	animation1.pattern3,overlay,-1,150,0,0
 }
-surface1080
+surface2080
 {
 	element0,base,mouse_nya2.png,0,0
 }
-surface1081
+surface2081
 {
 	element0,base,mouse_nya3.png,0,0
 }
@@ -192,12 +339,12 @@ surface1081
 surface.append5
 {
 	animation1.interval,talk,1
-	animation1.pattern0,overlay,1090,0,0,0
+	animation1.pattern0,overlay,2090,0,0,0
 	animation1.pattern1,overlay,-1,150,0,0
-	animation1.pattern2,overlay,1061,150,0,0
+	animation1.pattern2,overlay,2061,150,0,0
 	animation1.pattern3,overlay,-1,150,0,0
 }
-surface1090
+surface2090
 {
 	element0,base,mouse_mm1.png,0,0
 }
