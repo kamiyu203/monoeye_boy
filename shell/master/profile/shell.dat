@@ -4,11 +4,13 @@ char0.bind.savearray,100=1 101=0 102=0
 Char1.balloon.isleft,1
 communicatebox.left,767
 scriptbox.left,751
+balloon0.offset,-5.-8
 Char0.centery,800
+balloon1.offset,-2.-10
 Char0.balloon.isleft,1
 scriptbox.top,207
-Char0.center,1050
+Char0.center,1180
 Char1.centery,800
-Char1.center,1050
+Char1.center,1180
 communicatebox.top,379
 __system_written_flag_do_not_remove__,written
