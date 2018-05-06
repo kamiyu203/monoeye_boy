@@ -1,6 +1,5 @@
 ghost/master/yaya_variable.cfg,nonar,noupdate
 ghost/master/profile/,nonar,noupdate
-ghost/master/debug.txt,nonar,noupdate
 shell/master/profile/,nonar,noupdate
 
 .DS_Store,nonar,noupdate

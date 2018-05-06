@@ -102,13 +102,6 @@ Menu_TELLNAME
 	">>
 }
 
-Menu_USERCOMSTART
-{
-	<<"
-	真：なあに？\![open,communicatebox]
-	">>
-}
-
 //---- トーク頻度
 Menu_TALKMAX
 {
