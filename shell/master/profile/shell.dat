@@ -2,7 +2,7 @@ Charset,UTF-8
 __system_settings_version__,2
 char0.bind.savearray,100=1 101=0 102=0
 Char1.balloon.isleft,1
-communicatebox.left,767
+communicatebox.left,1914
 scriptbox.left,751
 balloon0.offset,-5.-8
 Char0.centery,1440
@@ -12,5 +12,5 @@ scriptbox.top,207
 Char0.center,2399
 Char1.centery,1440
 Char1.center,2399
-communicatebox.top,379
+communicatebox.top,1180
 __system_written_flag_do_not_remove__,written
