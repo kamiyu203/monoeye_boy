@@ -16,10 +16,19 @@ sakura.balloon.offsety,80
 kero.balloon.offsetx,30
 kero.balloon.offsety,260
 
-sakura.bindoption.group,服,mustselect
-sakura.bindgroup100.name,服,いつもの服
-sakura.bindgroup101.name,服,白シャツ
-sakura.bindgroup102.name,服,セーター
+sakura.bindoption.group,髪型,mustselect
+sakura.bindgroup100.name,髪型,いつもの髪型
 sakura.bindgroup100.default,1
+
+sakura.bindoption.group,服装,mustselect
+sakura.bindgroup200.name,服装,いつもの服
+sakura.bindgroup201.name,服装,白シャツ
+sakura.bindgroup202.name,服装,セーター
+sakura.bindgroup200.default,1
+
+sakura.bindoption.group,アクセ,multiple
+sakura.bindgroup300.name,アクセ,軟骨ピアス
+sakura.bindgroup301.name,アクセ,ダブルピアス
+sakura.bindgroup300.default,1
 
 sakura.menu,auto

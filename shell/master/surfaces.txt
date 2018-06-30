@@ -6,7 +6,7 @@ version,1
 }
 
 // 当たり判定
-surface0-26,30,!10
+surface0-16,!10
 {
 collision0,60,20,190,70,Head
 collision1,90,75,140,145,Face
@@ -24,211 +24,215 @@ mouseup0,Head,system:hand
 mouseup1,Chest,system:hand
 }
 
-// サーフェス設定
 //**************************************
 // ボディ
 //**************************************
-surface.append0-30,!10,!26-29
+surface.append0-16,!10
 {
 	element0,base,body,0,0
-	element1,overlay,pants01,0,0
-	element2,overlay,hair01,0,0
 	
+	// 追加表情
+	// 頬染め
+	animation2.interval,never
+	animation2.pattern0,overlay,500,0,0,0
+	
+	// 汗
+	animation3.interval,never
+	animation3.pattern0,overlay,501,0,0,0
+	
+	// 涙
+	animation4.interval,never
+	animation4.pattern0,overlay,502,0,0,0
+	
+	// 着せ替え
+	// 髪
 	animation100.interval,bind
-	animation100.pattern0,add,3000,0,0,0
+	animation100.pattern0,overlay,3000,0,0,0
 	
-	animation101.interval,bind
-	animation101.pattern0,add,3001,0,0,0
+	// 服装
+	animation200.interval,bind
+	animation200.pattern0,overlay,3010,0,0,0
+
+	animation201.interval,bind
+	animation201.pattern0,overlay,3011,0,0,0
 	
-	animation102.interval,bind
-	animation102.pattern0,add,3002,0,0,0
+	animation202.interval,bind
+	animation202.pattern0,overlay,3012,0,0,0
+	
+	// アクセサリー
+	animation300.interval,bind
+	animation300.pattern0,overlay,3020,0,0,0
+	
+	animation301.interval,bind
+	animation301.pattern0,overlay,3021,0,0,0
 }
 
-surface.append26
+surface500 // 頬染め
 {
-	element0,base,body,0,0
-	element1,overlay,pants01,0,0
-	element2,overlay,hair01,0,0
-	
-	animation100.interval,bind
-	animation100.pattern0,add,3000,0,0,0
-	animation100.pattern1,add,3010,0,0,0
-	
-	animation101.interval,bind
-	animation101.pattern0,add,3001,0,0,0
-	animation101.pattern1,add,3011,0,0,0
-	
-	animation102.interval,bind
-	animation102.pattern0,add,3002,0,0,0
-	animation102.pattern1,add,3012,0,0,0
+	element0,base,cheek.png,0,0
 }
 
-surface3000	// いつもの秋服
+surface501 // 汗
+{
+	element0,base,surface0010.png,0,0
+}
+
+surface502 // 涙
+{
+	element0,base,tears.png,0,0
+}
+
+surface3000 // いつもの髪型
+{
+	element0,base,hair01.png,0,0
+}
+
+surface3010	// いつもの秋服
 {
 	element0,base,cos01.png,0,0
-	element1,overlay,necklace01.png,0,0
-	element2,overlay,piace01.png,0,0
-}
-surface3010
-{
-	element0,overlay,arm2_base,0,0
-	element1,overlay,arm2_cos01,0,0
-	element2,overlay,watch,0,0
 }
 
-surface3001	// 白シャツ
+surface3011	// 白シャツ
 {
-	element0,base,cos02,0,0
-	element1,overlay,piace01,0,0
-}
-surface3011
-{
-	element0,overlay,arm2_base,0,0
-	element1,overlay,arm2_cos02,0,0
-	element2,overlay,watch,0,0
+	element0,base,cos02.png,0,0
 }
 
-surface3002	// セーター
+surface3012	// セーター
 {
-	element0,base,cos03,0,0
-	element1,overlay,piace02,0,0
+	element0,base,cos03.png,0,0
 }
-surface3012
+
+surface3020 // 軟骨ピアス
 {
-	element0,overlay,arm2_base,0,0
-	element1,overlay,arm2_cos03,0,0
+	element0,base,ear01.png,0,0
+}
+
+surface3021 // ダブルピアス
+{
+	element0,base,ear02.png,0,0
 }
 
 //**************************************
 // 表情
 //**************************************
-surface0
+surface0 // 普通
 {
-    element5,overlay,surface1000,0,0
+    element1,overlay,pupil1.png,0,0
+    element2,overlay,eye1.png,0,0
+    element3,overlay,mayu1.png,0,0
+    element4,overlay,mouse_niko1.png,0,0
 }
-surface1
+surface1 // 目閉じ真顔
 {
-    element5,overlay,surface1001,0,0
+    element1,overlay,eye_cl.png,0,0
+    element2,overlay,mayu1.png,0,0
+    element3,overlay,mouse_niko1.png,0,0
 }
-surface2
+
+
+surface2 // 真顔
 {
-    element5,overlay,surface1002,0,0
+	element1,overlay,pupil1.png,0,0
+    element2,overlay,eye1.png,0,0
+    element3,overlay,mayu1.png,0,0
+    element4,overlay,mouse_m1.png,0,0
 }
-surface3
+surface3 // 目閉じ真顔
 {
-    element5,overlay,surface1003,0,0
+    element1,overlay,eye_cl.png,0,0
+    element2,overlay,mayu1.png,0,0
+    element3,overlay,mouse_m1.png,0,0
 }
-surface4
+surface4 // 目逸らし
 {
-    element5,overlay,surface1004,0,0
+    element1,overlay,pupil2.png,0,0
+    element2,overlay,eye1.png,0,0
+    element3,overlay,mayu1.png,0,0
+    element4,overlay,mouse_m1.png,0,0
 }
-surface5
+surface5 // 伏し目
 {
-    element5,overlay,surface1005,0,0
+    element1,overlay,pupil2.png,0,0
+    element2,overlay,eye_jito1.png,0,0
+    element3,overlay,mayu1.png,0,0
+    element4,overlay,mouse_m1.png,0,0
 }
-surface6
+surface6 // 気づき
 {
-    element5,overlay,surface1006,0,0
+    element1,overlay,pupil3.png,0,0
+    element2,overlay,eye_wow.png,0,0
+    element3,overlay,mayu1.png,0,0
+    element4,overlay,mouse_m1.png,0,0
 }
-surface7
+surface7 // 焦り
 {
-    element5,overlay,surface1007,0,0
+    element1,overlay,pupil3.png,0,0
+    element2,overlay,eye_wow.png,0,0
+    element3,overlay,mayu2.png,0,0
+    element4,overlay,mouse_mm1.png,0,0
 }
-surface8
+surface8 // 笑顔
 {
-    element5,overlay,surface1008,0,0
+    element1,overlay,eye_niko.png,0,0
+    element2,overlay,mayu1.png,0,0
+    element3,overlay,mouse_niko1.png,0,0
 }
-surface9
+surface9 // 苦笑
 {
-    element5,overlay,surface1009,0,0
+    element1,overlay,pupil1.png,0,0
+    element2,overlay,eye1.png,0,0
+    element3,overlay,mayu2.png,0,0
+    element4,overlay,mouse_niko1.png,0,0
 }
-surface11
+surface11 // 軽蔑
 {
-    element5,overlay,surface1011,0,0
+    element1,overlay,pupil1.png,0,0
+    element2,overlay,eye_jito1.png,0,0
+    element3,overlay,mayu1.png,0,0
+    element4,overlay,mouse_m1.png,0,0
 }
-surface12
+surface12 // 怒り
 {
-    element5,overlay,surface1012,0,0
+    element1,overlay,pupil1.png,0,0
+    element2,overlay,eye_jito1.png,0,0
+    element3,overlay,mayu2.png,0,0
+    element4,overlay,mouse_m1.png,0,0
 }
-surface13
+surface13 // 呆れ
 {
-    element5,overlay,surface1013,0,0
+    element1,overlay,pupil3.png,0,0
+    element2,overlay,eye_jito1.png,0,0
+    element3,overlay,mayu2.png,0,0
+    element4,overlay,mouse_mm1.png,0,0
 }
-surface14
+surface14 // 不安
 {
-    element5,overlay,surface1014,0,0
+	element1,overlay,pupil2.png,0,0
+    element2,overlay,eye_jito1.png,0,0
+    element3,overlay,mayu2.png,0,0
+    element4,overlay,mouse_m1.png,0,0
 }
-surface15
+surface15 // たくらみ
 {
-    element5,overlay,surface1015,0,0
+	element1,overlay,pupil1.png,0,0
+    element2,overlay,eye_jito1.png,0,0
+    element3,overlay,mayu1.png,0,0
+    element4,overlay,mouse_nya1.png,0,0
 }
-surface16
+surface16 // どや
 {
-    element5,overlay,surface1016,0,0
+    element1,overlay,eye_cl.png,0,0
+    element2,overlay,mayu1.png,0,0
+    element3,overlay,mouse_nya1.png,0,0
 }
-surface17
-{
-    element5,overlay,surface1017,0,0
-}
-surface18
-{
-    element5,overlay,surface1018,0,0
-}
-surface19
-{
-    element5,overlay,surface1019,0,0
-}
-surface20
-{
-    element5,overlay,surface1020,0,0
-}
-surface21
-{
-    element5,overlay,surface1021,0,0
-}
-surface22
-{
-    element5,overlay,surface1022,0,0
-}
-surface23
-{
-    element5,overlay,surface1023,0,0
-}
-surface24
-{
-    element5,overlay,surface1024,0,0
-}
-surface25
-{
-    element5,overlay,surface1025,0,0
-}
-surface26
-{
-    element5,overlay,surface1000,0,0
-}
-// surface27
-// {
-//     element5,overlay,surface1001,0,0
-// }
-// surface28
-// {
-//     element5,overlay,surface1019,0,0
-// }
-// surface29
-// {
-//     element5,overlay,surface1022,0,0
-// }
-surface30
-{
-    element5,overlay,surface1030,0,0
-}
+
 
 //**************************************
 // アニメーション設定
 //**************************************
 // アニメーション設定0番 瞬き
 // 瞬き通常
-surface.append0,2-5,16,17,22,23,25,26
+surface.append0,2,4,6,7,9
 {
 	animation0.interval,random,3
 	animation0.pattern0,overlay,2000,50,0,0
@@ -248,7 +252,7 @@ surface2001
 }
 
 // 瞬きジト目
-surface.append8,9,11,14,15,18
+surface.append5,11-15
 {
 	animation0.interval,random,3
 	animation0.pattern0,overlay,2010,50,0,0
@@ -264,7 +268,7 @@ surface2010
 
 // アニメーション設定1番 口パク
 // 口パク1(mouse_niko1)
-surface.append0,1,6,7,19,20,22,23,25,26
+surface.append0,1,8,9
 {
 	animation1.interval,talk,1
 	animation1.pattern0,overlay,2050.png,0,0,0
@@ -282,7 +286,7 @@ surface2051
 }
 
 // 口パク2(mouse_m)
-surface.append2-4,8,11,14-16,21,24
+surface.append2-6,11,12,14
 {
 	animation1.interval,talk,1
 	animation1.pattern0,overlay,2060.png,0,0,0
@@ -300,7 +304,7 @@ surface2061
 }
 
 // 口パク3(mouse_mm)
-surface.append9,17,18,30
+surface.append7,13
 {
 	animation1.interval,talk,1
 	animation1.pattern0,overlay,2070.png,0,0,0
@@ -318,7 +322,7 @@ surface2071
 }
 
 // 口パク4(mouse_nya1)
-surface.append12,13
+surface.append15,16
 {
 	animation1.interval,talk,1
 	animation1.pattern0,overlay,2080.png,0,0,0
@@ -333,18 +337,4 @@ surface2080
 surface2081
 {
 	element0,base,mouse_nya3.png,0,0
-}
-
-// 口パク5(mouse_mm2)
-surface.append5
-{
-	animation1.interval,talk,1
-	animation1.pattern0,overlay,2090,0,0,0
-	animation1.pattern1,overlay,-1,150,0,0
-	animation1.pattern2,overlay,2061,150,0,0
-	animation1.pattern3,overlay,-1,150,0,0
-}
-surface2090
-{
-	element0,base,mouse_mm1.png,0,0
 }
