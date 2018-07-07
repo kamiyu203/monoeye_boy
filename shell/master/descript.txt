@@ -18,12 +18,14 @@ kero.balloon.offsety,260
 
 sakura.bindoption.group,髪型,mustselect
 sakura.bindgroup100.name,髪型,いつもの髪型
+sakura.bindgroup101.name,髪型,ピン留め
 sakura.bindgroup100.default,1
 
 sakura.bindoption.group,服装,mustselect
 sakura.bindgroup200.name,服装,いつもの服
 sakura.bindgroup201.name,服装,白シャツ
 sakura.bindgroup202.name,服装,セーター
+sakura.bindgroup203.name,服装,つなぎ（夏）
 sakura.bindgroup200.default,1
 
 sakura.bindoption.group,アクセ,multiple

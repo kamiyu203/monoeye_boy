@@ -49,6 +49,9 @@ surface.append0-16,!10
 	animation100.interval,bind
 	animation100.pattern0,overlay,3000,0,0,0
 	
+	animation101.interval,bind
+	animation101.pattern0,overlay,3001,0,0,0
+	
 	// 服装
 	animation200.interval,bind
 	animation200.pattern0,overlay,3010,0,0,0
@@ -58,6 +61,9 @@ surface.append0-16,!10
 	
 	animation202.interval,bind
 	animation202.pattern0,overlay,3012,0,0,0
+	
+	animation203.interval,bind
+	animation203.pattern0,overlay,3013,0,0,0
 	
 	// アクセサリー
 	animation300.interval,bind
@@ -87,7 +93,12 @@ surface3000 // いつもの髪型
 	element0,base,hair01.png,0,0
 }
 
-surface3010	// いつもの秋服
+surface3001 //ピン留め
+{
+	element0,base,hair02.png,0,0
+}
+
+surface3010 	// いつもの秋服
 {
 	element0,base,cos01.png,0,0
 }
@@ -97,9 +108,14 @@ surface3011	// 白シャツ
 	element0,base,cos02.png,0,0
 }
 
-surface3012	// セーター
+surface3012	 // セーター
 {
 	element0,base,cos03.png,0,0
+}
+
+surface3013 // つなぎ（夏）
+{
+	element0,base,cos04.png,0,0
 }
 
 surface3020 // 軟骨ピアス
