@@ -157,7 +157,6 @@
 OnSurfaceRestore
 {
 	if rank == 0 {"\0\s[4]\e"}
-	if rank == 1 {"\0\s[2]\e"}
 	else {"\0\s[0]\1\s[10]\e"}
 }
 
@@ -691,4 +690,14 @@ Menu_USERCOMSTART
 {
 	rank = 3
 	"\0ランクを%(rank)に設定"
+}
+
+ユーザーコミュflagtalk
+{
+	"%(flag_talk)"
+}
+
+ユーザーコミュruflag
+{
+	"%(ru_flag)"
 }

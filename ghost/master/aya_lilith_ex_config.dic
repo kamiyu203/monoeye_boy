@@ -35,7 +35,6 @@
 
 ‚ ‚â‚è‚è‚·EX•W€•\î0 {
 	if rank == 0 {4}
-	elseif rank == 1 {2}
 	else {0}
 }
 
