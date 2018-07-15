@@ -34,3 +34,27 @@ sakura.bindgroup301.name,アクセ,ダブルピアス
 sakura.bindgroup300.default,1
 
 sakura.menu,auto
+
+menu.background.bitmap.filename,menu_background.png
+menu.foreground.bitmap.filename,menu_foreground.png
+menu.sidebar.bitmap.filename,menu_sidebar.png
+
+menu.background.font.color.r,0
+menu.background.font.color.g,0
+menu.background.font.color.b,0
+
+menu.foreground.font.color.r,0
+menu.foreground.font.color.g,0
+menu.foreground.font.color.b,0
+
+menu.disable.font.color.r,192
+menu.disable.font.color.g,192
+menu.disable.font.color.b,192
+
+menu.separator.color.r,96
+menu.separator.color.g,96
+menu.separator.color.b,96
+
+menu.background.alignment,lefttop
+menu.foreground.alignment,lefttop
+menu.sidebar.alignment,bottom

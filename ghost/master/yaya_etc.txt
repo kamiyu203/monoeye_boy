@@ -157,7 +157,7 @@
 OnSurfaceRestore
 {
 	if rank == 0 {"\0\s[4]\e"}
-	if rank == 1 {"\0\s[3]\e"}
+	if rank == 1 {"\0\s[2]\e"}
 	else {"\0\s[0]\1\s[10]\e"}
 }
 

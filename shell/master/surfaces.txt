@@ -287,7 +287,7 @@ surface2010
 surface.append0,1,8,9
 {
 	animation1.interval,talk,1
-	animation1.pattern0,overlay,2050.png,0,0,0
+	animation1.pattern0,overlay,2050,0,0,0
 	animation1.pattern1,overlay,-1,150,0,0
 	animation1.pattern2,overlay,2051,150,0,0
 	animation1.pattern3,overlay,-1,150,0,0
@@ -305,7 +305,7 @@ surface2051
 surface.append2-6,11,12,14
 {
 	animation1.interval,talk,1
-	animation1.pattern0,overlay,2060.png,0,0,0
+	animation1.pattern0,overlay,2060,0,0,0
 	animation1.pattern1,overlay,-1,150,0,0
 	animation1.pattern2,overlay,2061,150,0,0
 	animation1.pattern3,overlay,-1,150,0,0
@@ -323,7 +323,7 @@ surface2061
 surface.append7,13
 {
 	animation1.interval,talk,1
-	animation1.pattern0,overlay,2070.png,0,0,0
+	animation1.pattern0,overlay,2070,0,0,0
 	animation1.pattern1,overlay,-1,150,0,0
 	animation1.pattern2,overlay,2071,150,0,0
 	animation1.pattern3,overlay,-1,150,0,0
@@ -341,7 +341,7 @@ surface2071
 surface.append15,16
 {
 	animation1.interval,talk,1
-	animation1.pattern0,overlay,2080.png,0,0,0
+	animation1.pattern0,overlay,2080,0,0,0
 	animation1.pattern1,overlay,-1,150,0,0
 	animation1.pattern2,overlay,2081,150,0,0
 	animation1.pattern3,overlay,-1,150,0,0

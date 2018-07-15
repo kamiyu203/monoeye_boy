@@ -34,7 +34,7 @@
 //0側・1側の標準表情 ID指定
 
 あやりりすEX標準表情0 {
-	if rank == 0 {3}
+	if rank == 0 {4}
 	elseif rank == 1 {2}
 	else {0}
 }
