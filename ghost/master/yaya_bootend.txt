@@ -20,7 +20,7 @@
 //---- Vanish（消滅）カウントを見て、真の初回か否かを判定する
 初回起動
 {
-	一体化
+	起動処理
 	--
 	AYLex_DEFAULT_SURFACE[0] = 4
 	
@@ -61,7 +61,7 @@ Vanish後初回起動
 	//---- 再インストール後の初回起動
 	if _vanish_count >= 1
 	{
-		一体化
+		起動処理
 		--
 		<<"
 		真6：あ、(ユーザ)さん…！
@@ -86,7 +86,6 @@ Vanish後初回起動
 {
 	起動処理
 	--
-	if rank == 1 {AYLex_DEFAULT_SURFACE[0] = 2}
 	if rank == 0 {RankD_boot}
 	else {
 		<<"
@@ -101,7 +100,6 @@ Vanish後初回起動
 {
 	起動処理
 	--
-	if rank == 1 {AYLex_DEFAULT_SURFACE[0] = 2}
 	if rank == 0 {RankD_boot}
 	else {
 		<<"
@@ -116,7 +114,6 @@ Vanish後初回起動
 {
 	起動処理
 	--
-	if rank == 1 {AYLex_DEFAULT_SURFACE[0] = 2}
 	if rank == 0 {RankD_boot}
 	else {
 		<<"
@@ -132,7 +129,6 @@ Vanish後初回起動
 {
 	起動処理
 	--
-	if rank == 1 {AYLex_DEFAULT_SURFACE[0] = 2}
 	if rank == 0 {RankD_boot}
 	else {
 		<<"
@@ -147,7 +143,6 @@ Vanish後初回起動
 {
 	起動処理
 	--
-	if rank == 1 {AYLex_DEFAULT_SURFACE[0] = 2}
 	if rank == 0 {RankD_boot}
 	else {
 		if rank == 3 {
