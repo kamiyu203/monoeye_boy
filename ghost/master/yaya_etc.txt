@@ -690,6 +690,18 @@ OnURLDropping
 	"%(ru_flag)"
 }
 
+ユーザーコミュflagon
+{
+	ru_flag = 1
+	"%(ru_flag)"
+}
+
+ユーザーコミュflagoff
+{
+	ru_flag = 0
+	"%(ru_flag)"
+}
+
 ユーザーコミュsurface
 {
 	if rank >= 1 {AYLex_DEFAULT_SURFACE[0] = 0}

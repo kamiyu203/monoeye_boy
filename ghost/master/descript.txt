@@ -8,6 +8,5 @@ name,単眼男子
 type,ghost
 
 sakura.name,真人
-kero.name,お兄さん
 
 shiori,yaya.dll
