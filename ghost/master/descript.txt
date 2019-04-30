@@ -2,7 +2,7 @@ charset,Shift_JIS
 
 craftman,Kamiyu
 craftmanw,‚©‚İ‚ä
-craftmanurl,http://nekuraphilia.hatenablog.jp
+craftmanurl,http://kamiyu203.stars.ne.jp/
 
 name,’PŠá’jq
 type,ghost

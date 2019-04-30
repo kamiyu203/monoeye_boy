@@ -2,38 +2,24 @@ charset,Shift_JIS
 
 craftman,Kamiyu
 craftmanw,かみゆ
-craftmanurl,http://nekuraphilia.hatenablog.jp
+craftmanurl,http://kamiyu203.stars.ne.jp/
 
 id,master
 name,master
 type,shell
 
 seriko.use_self_alpha,1
-
-sakura.balloon.offsetx,50
-sakura.balloon.offsety,80
-
-kero.balloon.offsetx,30
-kero.balloon.offsety,260
-
-sakura.bindoption.group,髪型,mustselect
-sakura.bindgroup100.name,髪型,いつもの髪型
-sakura.bindgroup101.name,髪型,ピン留め
-sakura.bindgroup100.default,1
-
-sakura.bindoption.group,服装,mustselect
-sakura.bindgroup200.name,服装,いつもの服
-sakura.bindgroup201.name,服装,白シャツ
-sakura.bindgroup202.name,服装,セーター
-sakura.bindgroup203.name,服装,つなぎ（夏）
-sakura.bindgroup200.default,1
-
-sakura.bindoption.group,アクセ,multiple
-sakura.bindgroup300.name,アクセ,軟骨ピアス
-sakura.bindgroup301.name,アクセ,ダブルピアス
-sakura.bindgroup300.default,1
-
+seriko.alignmenttodesktop,free
 sakura.menu,auto
+
+sakura.bindoption.group,髪,mustselect
+sakura.bindgroup5000.name,髪,やわらかブロンド,
+sakura.bindgroup5000.default,1
+
+sakura.bindoption.group,服,mustselect
+sakura.bindgroup1000.name,服,いつものオレンジ,
+sakura.bindgroup1000.default,1
+
 
 menu.background.bitmap.filename,menu_background.png
 menu.foreground.bitmap.filename,menu_foreground.png
