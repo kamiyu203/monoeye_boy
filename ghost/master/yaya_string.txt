@@ -34,17 +34,17 @@ On_portalrootbutton.caption
 ポータルサイト
 {
 	<<"
-	作者サイト | http://nekuraphilia.hatenablog.jp|
+	作者サイト | http://kamiyu203.stars.ne.jp/
 	-              |"
-	SSP BUGTRAQ      | http://ssp.shillest.net/| 
+	SSP BUGTRAQ      | http://ssp.shillest.net/|
 	-              |"
-	Disc-2 | http://disc2.s56.xrea.com| 
-	GHOST/BALLOON TOWN | http://ghosttown.mikage.jp/| 
-	ゴーストキャプターさくら | http://buynowforsale.shillest.net/ghosts/| 
+	Disc-2 | http://disc2.s56.xrea.com|
+	GHOST/BALLOON TOWN | http://ghosttown.mikage.jp/|
+	ゴーストキャプターさくら | http://buynowforsale.shillest.net/ghosts/|
 	-              |"
-	整備班           | http://ms.shillest.net/          | 
+	整備班           | http://ms.shillest.net/          |
 	文Wiki「文屋」|http://emily.shillest.net/ayaya/|
-	あやりりすEX     | http://emily.shillest.net/ayaya/index.php?%E3%83%88%E3%83%BC%E3%82%AF%E3%81%B9%E3%81%9F%E6%9B%B8%E3%81%8D%E6%94%AF%E6%8F%B4%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA         |  
+	あやりりすEX     | http://emily.shillest.net/ayaya/index.php?%E3%83%88%E3%83%BC%E3%82%AF%E3%81%B9%E3%81%9F%E6%9B%B8%E3%81%8D%E6%94%AF%E6%8F%B4%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA         |
 	">>
 }
 
@@ -117,5 +117,3 @@ On_vanishbutton.visible
 	//---- "0"で非表示、それ以外で表示
 	"1"
 }
-
-

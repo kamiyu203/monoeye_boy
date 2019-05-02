@@ -9,8 +9,14 @@ name,master
 type,shell
 
 seriko.use_self_alpha,1
-seriko.alignmenttodesktop,free
 sakura.menu,auto
+
+seriko.alignmenttodesktop,free
+sakura.balloon.offsetx,10
+sakura.balloon.offsety,50
+kero.balloon.offsetx,-10
+kero.balloon.offsety,20
+
 
 sakura.bindoption.group,”¯,mustselect
 sakura.bindgroup5000.name,”¯,‚â‚í‚ç‚©ƒuƒƒ“ƒh,
