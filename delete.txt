@@ -7,10 +7,6 @@ shell/master/necklace01.png
 shell/master/pants01.png
 shell/master/piace01.png
 shell/master/piace02.png
-shell/master/surface1000.png
-shell/master/surface1001.png
-shell/master/surface1002.png
-shell/master/surface1003.png
 shell/master/surface1004.png
 shell/master/surface1005.png
 shell/master/surface1006.png

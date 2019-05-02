@@ -54,7 +54,7 @@ surface0-9,11
   animation500.pattern0, overlay, 500, 0, 0, 0
   // •ž
   animation1000.interval, bind
-  animation1000.pattern0, add, 1000, 0, 0, 0
+  animation1000.pattern0, overlay, 1000, 0, 0, 0
 }
 
 //**************************************
