@@ -22,6 +22,10 @@ sakura.bindoption.group,髪,mustselect
 sakura.bindgroup5000.name,髪,やわらかブロンド,
 sakura.bindgroup5000.default,1
 
+sakura.bindoption.group,服,mustselect
+sakura.bindgroup1000.name,服,いつものオレンジ,
+sakura.bindgroup1000.default,1
+
 menu.background.bitmap.filename,menu_background.png
 menu.foreground.bitmap.filename,menu_foreground.png
 menu.sidebar.bitmap.filename,menu_sidebar.png
