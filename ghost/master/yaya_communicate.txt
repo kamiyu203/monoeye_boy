@@ -354,7 +354,7 @@ Menu_Communicate {
 	}
 
 	//呼んでみる
-	elseif (RE_SEARCH(reference[1], '真人|まなと')) {
+	elseif (RE_SEARCH(reference[1], '真人|まなと|マナト')) {
 		<<"
 		真0：ん。\w9
 		なあに？ (ユーザ)さん。\w9
