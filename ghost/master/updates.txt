@@ -1,3 +1,4 @@
+file,cheatsheet.txt9587802ca53939d437bb895313944552size=914
 file,delete.txt9c850524ce4df67e0e8b45c0435db16fsize=1610
 file,developer_options.txt477b590e19d0b69a14a8cf01d2095879size=201
 file,ghost/master/aya_lilith.dic1d06e070378dff3e221ecb03b818a23fsize=52950
@@ -13,10 +14,10 @@ file,ghost/master/system_config.txte1be101fa9d386fe4a460638a13e5688size=783
 file,ghost/master/thumbnail.png3e67d52337c67ea3e3563e9c53e25cb4size=5813
 file,ghost/master/yaya.dll574de3a1212adad81ddd883f883498dcsize=1241088
 file,ghost/master/yaya.txte9bd59b519fa63922191408bf7abfc8csize=1346
-file,ghost/master/yaya_aitalk.txt496c7cae66d321b989be215ab0d29e45size=16328
+file,ghost/master/yaya_aitalk.txt5f8c034d4d6e6e4dc83bb9aa132082efsize=17207
 file,ghost/master/yaya_bootend.txt8cd20b8084098b44fd6ec89921c7361asize=6057
 file,ghost/master/yaya_change.txt15d27ddefe1b7b162ac9b49cfba12c32size=2510
-file,ghost/master/yaya_communicate.txt077e6fc2d477f648fb76c95393c7cbdbsize=12215
+file,ghost/master/yaya_communicate.txt67d44203ca573b170197a71c4d71ef2bsize=12063
 file,ghost/master/yaya_config.txt649ecd57c25368bd9da922dd4cb0e95bsize=3353
 file,ghost/master/yaya_etc.txt4e3ac120bc15c715087450d7b8aa27b1size=16724
 file,ghost/master/yaya_event.txt4cf43fdb3607a7f27a4c8316a001c94asize=5380
