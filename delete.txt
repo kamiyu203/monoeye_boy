@@ -1,3 +1,5 @@
+shell/master/surface0.apng
+
 ghost/master/debug.txt
 shell/master/arm2_base.png
 shell/master/arm2_cos01.png
