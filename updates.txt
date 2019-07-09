@@ -1,5 +1,5 @@
 file,cheatsheet.txt9587802ca53939d437bb895313944552size=914
-file,delete.txt85292ca458fd470638a0b0240cd5dcddsize=1638
+file,delete.txt65f0f6ae282abeb299fc42cd9bf7d34asize=1664
 file,developer_options.txt477b590e19d0b69a14a8cf01d2095879size=201
 file,ghost/master/aya_lilith.dic1d06e070378dff3e221ecb03b818a23fsize=52950
 file,ghost/master/aya_lilith_config.dicd1eb66d74f4a53b91ee1c6a4110439e0size=2046
@@ -31,7 +31,6 @@ file,shell/master/descript.txt0b546a698d1d1cb207bd1012307991d9size=1146
 file,shell/master/menu_background.png7b58a58b87128be6c5e9bfb0c3e64dadsize=103
 file,shell/master/menu_foreground.png896c5a3a3b3e68b201982dfbd09f675dsize=1792
 file,shell/master/menu_sidebar.pnga1032d9c42e63490395df27530b6bf26size=3309
-file,shell/master/surface0.png6e4ca2bc2407fac56f43695b421cb29csize=294993
 file,shell/master/surface10.pngb00032907a49c5ab0802ec32b23b30absize=3638
 file,shell/master/surface100.png99baa852e3da496915ab67225db1e428size=193836
 file,shell/master/surface1000.pngbdf651c311801e14be0ca2b6bcfb52basize=247429
