@@ -87,8 +87,6 @@
 
 朝に起動
 {
-	起動処理
-	--
 	if rank == 0 {RankD_boot}
 	else {
 		<<"
@@ -106,8 +104,6 @@
 
 昼に起動
 {
-	起動処理
-	--
 	if rank == 0 {RankD_boot}
 	else {
 		<<"
@@ -119,8 +115,6 @@
 
 夜に起動
 {
-	起動処理
-	--
 	if rank == 0 {RankD_boot}
 	else {
 		<<"
@@ -132,8 +126,6 @@
 
 深夜に起動
 {
-	起動処理
-	--
 	if rank == 0 {RankD_boot}
 	else {
 		<<"
@@ -146,8 +138,6 @@
 
 起動
 {
-	起動処理
-	--
 	if rank == 0 {RankD_boot}
 	else {
 		if rank == 3 {
