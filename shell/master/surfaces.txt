@@ -25,36 +25,42 @@ descript
 //**************************************
 
 // 当たり判定
-surface0-9,11.append
+surface0-9,11-12.append
 {
-  collision0, 340, 20, 520, 90, Head
-  collision1, 400, 90, 480, 180, Face
+	collision0, 340, 20, 520, 90, Head
+	collision1, 400, 90, 480, 180, Face
 	collision2, 440, 220, 520, 330, Chest
 	collision3, 480, 95, 510, 140, Ear
-  collision4, 400, 200, 440, 300, Shoulder
+	collision4, 400, 200, 440, 300, Shoulder
 	collision5, 520, 180, 590, 300, Shoulder
 }
 
 // カーソル設定
 sakura.cursor
 {
-  mouseup0, Head, system:hand
+	mouseup0, Head, system:hand
 	mouseup1, Chest, system:hand
 }
 
 //**************************************
 // ベース
 //**************************************
-surface0-9,11
+surface0-9,11-12
 {
-  // ボディ
-  element0, base, surface100.png, 0, 0
-  // 追加表情
-  animation500.interval, never
-  animation500.pattern0, overlay, 500, 0, 0, 0
-  // 服
-  animation1000.interval, bind
-  animation1000.pattern0, overlay, 1000, 0, 0, 0
+	// ボディ
+	element0, base, surface100.png, 0, 0
+	// 追加表情
+	animation500.interval, never
+	animation500.pattern0, overlay, 500, 0, 0, 0
+	animation501.interval, never
+	animation501.pattern0, overlay, 501, 0, 0, 0
+	// 服
+	animation1000.interval, bind
+	animation1000.pattern0, overlay, 1000, 0, 0, 0
+	animation1001.interval, bind
+	animation1001.pattern0, overlay, 1001, 0, 0, 0
+	animation1002.interval, bind
+	animation1002.pattern0, overlay, 1002, 0, 0, 0
 }
 
 //**************************************
@@ -73,7 +79,7 @@ surface.append3
   animation5000.pattern0, overlay, 4001, 0, 0, 0
   animation5000.pattern1, overlay, 5000, 0, 0, 0
 }
-surface.append5,9
+surface.append5,9,12
 {
   animation5000.interval, bind
   animation5000.pattern0, overlay, 4002, 0, 0, 0
@@ -284,4 +290,23 @@ surface11.append
   animation3000.pattern2, overlay, 3002, 100, 0, 0
   animation3000.pattern3, overlay, 3051, 50, 0, 0
   animation3000.pattern4, overlay, 3050, 50, 0, 0
+}
+
+// 焦り
+surface12.append
+{
+  // 口
+  element1, base, surface2040.png, 0, 0
+  animation2000.interval, talk
+  animation2000.pattern0, overlay, 2021, 0, 0, 0
+  animation2000.pattern1, overlay, -1, 80, 0, 0
+  animation2000.pattern2, overlay, 2022, 80, 0, 0
+  animation2000.pattern3, overlay, -1, 80, 0, 0
+  // 目
+  animation3000.interval, runonce+random, 6
+  animation3000.pattern0, overlay, 3080, 0, 0, 0
+  animation3000.pattern1, overlay, 3081, 50, 0, 0
+  animation3000.pattern2, overlay, 3002, 100, 0, 0
+  animation3000.pattern3, overlay, 3081, 50, 0, 0
+  animation3000.pattern4, overlay, 3080, 50, 0, 0
 }
