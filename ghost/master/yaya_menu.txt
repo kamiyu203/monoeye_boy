@@ -22,9 +22,15 @@ OpenMenu
 	＠改行多めメニュー：トーク頻度の設定｜Menu_TALKINTERVAL
 	＠メニュー【tell_name==1】：呼び名を変える｜Menu_TELLNAME
 	＠メニュー【rank<=1】：性別設定｜Menu_ChangeSex
+	＠改行多めメニュー【ISFUNC("イベント" + month + "月" + day + "日")==1】：今日は何の日？｜SpecialDay
 
 	＠改行多めメニュー：閉じる｜Menu_CANCEL
 	">>
+}
+
+SpecialDay
+{
+	EVAL("イベント" + month + "月" + day + "日")
 }
 
 //******************************************************************************
