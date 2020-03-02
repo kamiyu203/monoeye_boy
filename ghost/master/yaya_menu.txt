@@ -22,7 +22,7 @@ OpenMenu
 	＠改行多めメニュー：トーク頻度の設定｜Menu_TALKINTERVAL
 	＠メニュー【tell_name==1】：呼び名を変える｜Menu_TELLNAME
 	＠メニュー【rank<=1】：性別設定｜Menu_ChangeSex
-	＠改行多めメニュー【ISFUNC("イベント" + month + "月" + day + "日")==1】：今日は何の日？｜SpecialDay
+	＠改行多めメニュー【rank!=0 && ISFUNC("イベント" + month + "月" + day + "日")==1 && todays_event==0】：今日は何の日？｜SpecialDay
 
 	＠改行多めメニュー：閉じる｜Menu_CANCEL
 	">>
@@ -248,7 +248,7 @@ Omoideそうかも {
 
 Omoide自己紹介 {
 	<<"
-	真4：ふふ。\w9
+	\0\s[4]ふふ。\w9
 	真0：そんなに気になるんだったら、
 	ちょっと相手してくれない？\w9
 	\n[half]次の授業まで時間空いててさ、

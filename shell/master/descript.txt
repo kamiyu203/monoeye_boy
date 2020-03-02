@@ -12,10 +12,13 @@ seriko.use_self_alpha,1
 sakura.menu,auto
 
 seriko.alignmenttodesktop,free
-sakura.balloon.offsetx,10
-sakura.balloon.offsety,50
-kero.balloon.offsetx,-10
-kero.balloon.offsety,20
+seriko.sticky-window,1,0
+sakura.balloon.alignment,left
+sakura.balloon.offsetx,350
+sakura.balloon.offsety,100
+kero.balloon.alignment,right
+kero.balloon.offsetx,300
+kero.balloon.offsety,250
 
 
 sakura.bindoption.group,”¯,mustselect
