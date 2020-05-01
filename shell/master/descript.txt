@@ -30,6 +30,7 @@ sakura.bindgroup1000.name,服,いつものオレンジ,
 sakura.bindgroup1000.default,1
 sakura.bindgroup1001.name,服,こないだのオレンジ,
 sakura.bindgroup1002.name,服,冬支度
+sakura.bindgroup1003.name,服,さわやかストライプ
 
 menu.background.bitmap.filename,menu_background.png
 menu.foreground.bitmap.filename,menu_foreground.png

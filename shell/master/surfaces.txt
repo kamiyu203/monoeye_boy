@@ -61,6 +61,8 @@ surface0-9,11-12
 	animation1001.pattern0, overlay, 1001, 0, 0, 0
 	animation1002.interval, bind
 	animation1002.pattern0, overlay, 1002, 0, 0, 0
+	animation1003.interval, bind
+	animation1003.pattern0, overlay, 1003, 0, 0, 0
 }
 
 //**************************************
