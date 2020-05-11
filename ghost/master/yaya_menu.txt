@@ -167,6 +167,7 @@ Male
 	if username == "お姉" {
 		username == "お兄"
 	}
+	--
 	<<"
 	真：\_q【設定完了】\nユーザ性別：男性\_q
 	@改行多めメニュー：戻る｜OpenMenu
@@ -178,6 +179,7 @@ Female
 	if username == "お兄" {
 		username == "お姉"
 	}
+	--
 	<<"
 	真：\_q【設定完了】\nユーザ性別：女性\_q
 	@改行多めメニュー：戻る｜OpenMenu
