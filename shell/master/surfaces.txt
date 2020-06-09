@@ -7,25 +7,24 @@ descript
 
 //**************************************
 // SURFACE
-// 0-9 表情ベース
-// 100 ボディ
+// 0-9, 11-24 表情
+// 100 体
 // 500 追加表情
 // 1000 服
 // 2000 口
 // 3000 目
-// 4000 眉
-// 5000 髪
+// 4000 髪
 //**************************************
 // ANIMATION
 // 500 追加表情
-// 1000 着せ替え 服
+// 1000 服
 // 2000 口
 // 3000 目
-// 5000 髪、眉
+// 4000 髪
 //**************************************
 
 // 当たり判定
-surface0-9,11-12.append
+surface0-9,11-20.append
 {
 	collision0, 340, 20, 520, 90, Head
 	collision1, 400, 90, 480, 180, Face
@@ -35,7 +34,7 @@ surface0-9,11-12.append
 	collision5, 520, 180, 590, 300, Shoulder
 }
 
-// カーソル設定
+// カーソル
 sakura.cursor
 {
 	mouseup0, Head, system:hand
@@ -45,53 +44,20 @@ sakura.cursor
 //**************************************
 // ベース
 //**************************************
-surface0-9,11-12
+surface0-9,11-24
 {
-	// ボディ
 	element0, base, surface100.png, 0, 0
-	// 追加表情
+
 	animation500.interval, never
 	animation500.pattern0, overlay, 500, 0, 0, 0
 	animation501.interval, never
 	animation501.pattern0, overlay, 501, 0, 0, 0
-	// 服
+
 	animation1000.interval, bind
 	animation1000.pattern0, overlay, 1000, 0, 0, 0
-	animation1001.interval, bind
-	animation1001.pattern0, overlay, 1001, 0, 0, 0
-	animation1002.interval, bind
-	animation1002.pattern0, overlay, 1002, 0, 0, 0
-	animation1003.interval, bind
-	animation1003.pattern0, overlay, 1003, 0, 0, 0
-}
 
-//**************************************
-// 着せ替え
-//**************************************
-// 髪
-surface.append0,1,2,4,7,11
-{
-  animation5000.interval, bind
-  animation5000.pattern0, overlay, 4000, 0, 0, 0
-  animation5000.pattern1, overlay, 5000, 0, 0, 0
-}
-surface.append3
-{
-  animation5000.interval, bind
-  animation5000.pattern0, overlay, 4001, 0, 0, 0
-  animation5000.pattern1, overlay, 5000, 0, 0, 0
-}
-surface.append5,9,12
-{
-  animation5000.interval, bind
-  animation5000.pattern0, overlay, 4002, 0, 0, 0
-  animation5000.pattern1, overlay, 5000, 0, 0, 0
-}
-surface.append6,8
-{
-  animation5000.interval, bind
-  animation5000.pattern0, overlay, 4003, 0, 0, 0
-  animation5000.pattern1, overlay, 5000, 0, 0, 0
+	animation4000.interval, bind
+	animation4000.pattern0, overlay, 4000, 0, 0, 0
 }
 
 //**************************************
@@ -100,215 +66,331 @@ surface.append6,8
 // 標準
 surface0.append
 {
-  // 口
-  element1, base, surface2000.png, 0, 0
-  animation2000.interval, talk
-  animation2000.pattern0, overlay, 2001, 0, 0, 0
-  animation2000.pattern1, overlay, -1, 80, 0, 0
-  animation2000.pattern2, overlay, 2002, 80, 0, 0
-  animation2000.pattern3, overlay, -1, 80, 0, 0
-  // 目
-  animation3000.interval, runonce+random, 6
-  animation3000.pattern0, overlay, 3000, 0, 0, 0
-  animation3000.pattern1, overlay, 3001, 50, 0, 0
-  animation3000.pattern2, overlay, 3002, 100, 0, 0
-  animation3000.pattern3, overlay, 3001, 50, 0, 0
-  animation3000.pattern4, overlay, 3000, 50, 0, 0
+	element1, overlay, surface2000.png, 0, 0
+	animation2000.interval, talk
+	animation2000.pattern0, overlay, 2001, 0, 0, 0
+	animation2000.pattern1, overlay, -1, 80, 0, 0
+	animation2000.pattern2, overlay, 2002, 80, 0, 0
+	animation2000.pattern3, overlay, -1, 80, 0, 0
+	
+	animation3000.interval, runonce+random, 6
+	animation3000.pattern0, overlay, 3000, 0, 0, 0
+	animation3000.pattern1, overlay, 3001, 50, 0, 0
+	animation3000.pattern2, overlay, 3002, 100, 0, 0
+	animation3000.pattern3, overlay, 3001, 50, 0, 0
+	animation3000.pattern4, overlay, 3000, 50, 0, 0
 }
 
-// 目閉じ
+//  集中
 surface1.append
 {
-  // 口
-  element1, base, surface2010.png, 0, 0
-  animation2000.interval, talk
-  animation2000.pattern0, overlay, 2011, 0, 0, 0
-  animation2000.pattern1, overlay, -1, 80, 0, 0
-  animation2000.pattern2, overlay, 2002, 80, 0, 0
-  animation2000.pattern3, overlay, -1, 80, 0, 0
-  // 目
-  animation3000.interval, runonce
-  animation3000.pattern0, overlay, 3002, 0, 0, 0
+	element1, overlay, surface2010.png, 0, 0
+	animation2000.interval, talk
+	animation2000.pattern0, overlay, 2011, 0, 0, 0
+	animation2000.pattern1, overlay, -1, 80, 0, 0
+	animation2000.pattern2, overlay, 2012, 80, 0, 0
+	animation2000.pattern3, overlay, -1, 80, 0, 0
+	
+	element2, overlay, surface3002.png, 0, 0
 }
 
-// 目逸らし
+// 目そらし
 surface2.append
 {
-  // 口
-  element1, base, surface2010.png, 0, 0
-  animation2000.interval, talk
-  animation2000.pattern0, overlay, 2011, 0, 0, 0
-  animation2000.pattern1, overlay, -1, 80, 0, 0
-  animation2000.pattern2, overlay, 2002, 80, 0, 0
-  animation2000.pattern3, overlay, -1, 80, 0, 0
-  // 目
-  animation3000.interval, runonce+random, 6
-  animation3000.pattern0, overlay, 3010, 0, 0, 0
-  animation3000.pattern1, overlay, 3011, 50, 0, 0
-  animation3000.pattern2, overlay, 3002, 100, 0, 0
-  animation3000.pattern3, overlay, 3011, 50, 0, 0
-  animation3000.pattern4, overlay, 3010, 50, 0, 0
+	element1, overlay, surface2010.png, 0, 0
+	animation2000.interval, talk
+	animation2000.pattern0, overlay, 2011, 0, 0, 0
+	animation2000.pattern1, overlay, -1, 80, 0, 0
+	animation2000.pattern2, overlay, 2012, 80, 0, 0
+	animation2000.pattern3, overlay, -1, 80, 0, 0
+	
+	animation3000.interval, runonce+random, 6
+	animation3000.pattern0, overlay, 3010, 0, 0, 0
+	animation3000.pattern1, overlay, 3011, 50, 0, 0
+	animation3000.pattern2, overlay, 3002, 100, 0, 0
+	animation3000.pattern3, overlay, 3011, 50, 0, 0
+	animation3000.pattern4, overlay, 3010, 50, 0, 0
 }
 
 // 驚き
 surface3.append
 {
-  // 口
-  element1, base, surface2020.png, 0, 0
-  animation2000.interval, talk
-  animation2000.pattern0, overlay, 2021, 0, 0, 0
-  animation2000.pattern1, overlay, -1, 80, 0, 0
-  animation2000.pattern2, overlay, 2022, 80, 0, 0
-  animation2000.pattern3, overlay, -1, 80, 0, 0
-  // 目
-  animation3000.interval, runonce+random, 6
-  animation3000.pattern0, overlay, 3020, 0, 0, 0
-  animation3000.pattern1, overlay, 3021, 50, 0, 0
-  animation3000.pattern2, overlay, 3002, 100, 0, 0
-  animation3000.pattern3, overlay, 3021, 50, 0, 0
-  animation3000.pattern4, overlay, 3020, 50, 0, 0
+	element1, overlay, surface2010.png, 0, 0
+	animation2000.interval, talk
+	animation2000.pattern0, overlay, 2011, 0, 0, 0
+	animation2000.pattern1, overlay, -1, 80, 0, 0
+	animation2000.pattern2, overlay, 2012, 80, 0, 0
+	animation2000.pattern3, overlay, -1, 80, 0, 0
+	
+	animation3000.interval, runonce+random, 6
+	animation3000.pattern0, overlay, 3020, 0, 0, 0
+	animation3000.pattern1, overlay, 3021, 50, 0, 0
+	animation3000.pattern2, overlay, 3022, 100, 0, 0
+	animation3000.pattern3, overlay, 3021, 50, 0, 0
+	animation3000.pattern4, overlay, 3020, 50, 0, 0
 }
 
 // 笑顔
 surface4.append
 {
-  // 口
-  element1, base, surface2000.png, 0, 0
-  animation2000.interval, talk
-  animation2000.pattern0, overlay, 2001, 0, 0, 0
-  animation2000.pattern1, overlay, -1, 80, 0, 0
-  animation2000.pattern2, overlay, 2002, 80, 0, 0
-  animation2000.pattern3, overlay, -1, 80, 0, 0
-  // 目
-  animation3000.interval, runonce
-  animation3000.pattern0, overlay, 3030, 0, 0, 0
+	element1, overlay, surface2000.png, 0, 0
+	animation2000.interval, talk
+	animation2000.pattern0, overlay, 2001, 0, 0, 0
+	animation2000.pattern1, overlay, -1, 80, 0, 0
+	animation2000.pattern2, overlay, 2002, 80, 0, 0
+	animation2000.pattern3, overlay, -1, 80, 0, 0
+	
+	element2, overlay, surface3030.png, 0, 0
 }
 
-// 怒り
+// ジト
 surface5.append
 {
-  // 口
-  element1, base, surface2020.png, 0, 0
-  animation2000.interval, talk
-  animation2000.pattern0, overlay, 2021, 0, 0, 0
-  animation2000.pattern1, overlay, -1, 80, 0, 0
-  animation2000.pattern2, overlay, 2022, 80, 0, 0
-  animation2000.pattern3, overlay, -1, 80, 0, 0
-  // 目
-  animation3000.interval, runonce+random, 6
-  animation3000.pattern0, overlay, 3040, 0, 0, 0
-  animation3000.pattern1, overlay, 3041, 50, 0, 0
-  animation3000.pattern2, overlay, 3002, 100, 0, 0
-  animation3000.pattern3, overlay, 3041, 50, 0, 0
-  animation3000.pattern4, overlay, 3040, 50, 0, 0
+	element1, overlay, surface2010.png, 0, 0
+	animation2000.interval, talk
+	animation2000.pattern0, overlay, 2011, 0, 0, 0
+	animation2000.pattern1, overlay, -1, 80, 0, 0
+	animation2000.pattern2, overlay, 2012, 80, 0, 0
+	animation2000.pattern3, overlay, -1, 80, 0, 0
+	
+	animation3000.interval, runonce+random, 6
+	animation3000.pattern0, overlay, 3060, 0, 0, 0
+	animation3000.pattern1, overlay, 3061, 50, 0, 0
+	animation3000.pattern2, overlay, 3062, 100, 0, 0
+	animation3000.pattern3, overlay, 3061, 50, 0, 0
+	animation3000.pattern4, overlay, 3060, 50, 0, 0
 }
 
-// 悲しみ
+//  苦笑
 surface6.append
 {
-  // 口
-  element1, base, surface2000.png, 0, 0
-  animation2000.interval, talk
-  animation2000.pattern0, overlay, 2001, 0, 0, 0
-  animation2000.pattern1, overlay, -1, 80, 0, 0
-  animation2000.pattern2, overlay, 2002, 80, 0, 0
-  animation2000.pattern3, overlay, -1, 80, 0, 0
-  // 目
-  animation3000.interval, runonce+random, 6
-  animation3000.pattern0, overlay, 3050, 0, 0, 0
-  animation3000.pattern1, overlay, 3051, 50, 0, 0
-  animation3000.pattern2, overlay, 3002, 100, 0, 0
-  animation3000.pattern3, overlay, 3051, 50, 0, 0
-  animation3000.pattern4, overlay, 3050, 50, 0, 0
+	element1, overlay, surface2000.png, 0, 0
+	animation2000.interval, talk
+	animation2000.pattern0, overlay, 2001, 0, 0, 0
+	animation2000.pattern1, overlay, -1, 80, 0, 0
+	animation2000.pattern2, overlay, 2002, 80, 0, 0
+	animation2000.pattern3, overlay, -1, 80, 0, 0
+	
+	animation3000.interval, runonce+random, 6
+	animation3000.pattern0, overlay, 3050, 0, 0, 0
+	animation3000.pattern1, overlay, 3051, 50, 0, 0
+	animation3000.pattern2, overlay, 3052, 100, 0, 0
+	animation3000.pattern3, overlay, 3051, 50, 0, 0
+	animation3000.pattern4, overlay, 3050, 50, 0, 0
 }
 
-// どや
+//  どや
 surface7.append
 {
-  // 口
-  element1, base, surface2030.png, 0, 0
-  animation2000.interval, talk
-  animation2000.pattern0, overlay, 2031, 0, 0, 0
-  animation2000.pattern1, overlay, -1, 80, 0, 0
-  animation2000.pattern2, overlay, 2032, 80, 0, 0
-  animation2000.pattern3, overlay, -1, 80, 0, 0
-  // 目
-  animation3000.interval, runonce
-  animation3000.pattern0, overlay, 3002, 0, 0, 0
+	element1, overlay, surface2030.png, 0, 0
+	animation2000.interval, talk
+	animation2000.pattern0, overlay, 2031, 0, 0, 0
+	animation2000.pattern1, overlay, -1, 80, 0, 0
+	animation2000.pattern2, overlay, 2002, 80, 0, 0
+	animation2000.pattern3, overlay, -1, 80, 0, 0
+	
+	element2, overlay, surface3002.png, 0, 0
 }
 
-// 心配
+//  寂しげ
 surface8.append
 {
-  // 口
-  element1, base, surface2040.png, 0, 0
-  animation2000.interval, talk
-  animation2000.pattern0, overlay, 2011, 0, 0, 0
-  animation2000.pattern1, overlay, -1, 80, 0, 0
-  animation2000.pattern2, overlay, 2002, 80, 0, 0
-  animation2000.pattern3, overlay, -1, 80, 0, 0
-  // 目
-  animation3000.interval, runonce+random, 6
-  animation3000.pattern0, overlay, 3001, 0, 0, 0
-  animation3000.pattern1, overlay, 3061, 50, 0, 0
-  animation3000.pattern2, overlay, 3002, 100, 0, 0
-  animation3000.pattern3, overlay, 3061, 50, 0, 0
-  animation3000.pattern4, overlay, 3001, 50, 0, 0
+	element1, overlay, surface2010.png, 0, 0
+	animation2000.interval, talk
+	animation2000.pattern0, overlay, 2011, 0, 0, 0
+	animation2000.pattern1, overlay, -1, 80, 0, 0
+	animation2000.pattern2, overlay, 2012, 80, 0, 0
+	animation2000.pattern3, overlay, -1, 80, 0, 0
+	
+	animation3000.interval, runonce+random, 6
+	animation3000.pattern0, overlay, 3080, 0, 0, 0
+	animation3000.pattern1, overlay, 3081, 50, 0, 0
+	animation3000.pattern2, overlay, 3082, 100, 0, 0
+	animation3000.pattern3, overlay, 3081, 50, 0, 0
+	animation3000.pattern4, overlay, 3080, 50, 0, 0
 }
 
-// うげ
+// 呆れ
 surface9.append
 {
-  // 口
-  element1, base, surface2040.png, 0, 0
-  animation2000.interval, talk
-  animation2000.pattern0, overlay, 2021, 0, 0, 0
-  animation2000.pattern1, overlay, -1, 80, 0, 0
-  animation2000.pattern2, overlay, 2022, 80, 0, 0
-  animation2000.pattern3, overlay, -1, 80, 0, 0
-  // 目
-  animation3000.interval, runonce+random, 6
-  animation3000.pattern0, overlay, 3070, 0, 0, 0
-  animation3000.pattern1, overlay, 3071, 50, 0, 0
-  animation3000.pattern2, overlay, 3002, 100, 0, 0
-  animation3000.pattern3, overlay, 3071, 50, 0, 0
-  animation3000.pattern4, overlay, 3070, 50, 0, 0
+	element1, overlay, surface2020.png, 0, 0
+	animation2000.interval, talk
+	animation2000.pattern0, overlay, 2021, 0, 0, 0
+	animation2000.pattern1, overlay, -1, 80, 0, 0
+	animation2000.pattern2, overlay, 2011, 80, 0, 0
+	animation2000.pattern3, overlay, -1, 80, 0, 0
+	
+	animation3000.interval, runonce+random, 6
+	animation3000.pattern0, overlay, 3060, 0, 0, 0
+	animation3000.pattern1, overlay, 3061, 50, 0, 0
+	animation3000.pattern2, overlay, 3062, 100, 0, 0
+	animation3000.pattern3, overlay, 3061, 50, 0, 0
+	animation3000.pattern4, overlay, 3060, 50, 0, 0
 }
 
-// 信頼
+//**************************************
+// 鼻歌
 surface11.append
 {
-  // 口
-  element1, base, surface2000.png, 0, 0
-  animation2000.interval, talk
-  animation2000.pattern0, overlay, 2001, 0, 0, 0
-  animation2000.pattern1, overlay, -1, 80, 0, 0
-  animation2000.pattern2, overlay, 2002, 80, 0, 0
-  animation2000.pattern3, overlay, -1, 80, 0, 0
-  // 目
-  animation3000.interval, runonce+random, 6
-  animation3000.pattern0, overlay, 3050, 0, 0, 0
-  animation3000.pattern1, overlay, 3051, 50, 0, 0
-  animation3000.pattern2, overlay, 3002, 100, 0, 0
-  animation3000.pattern3, overlay, 3051, 50, 0, 0
-  animation3000.pattern4, overlay, 3050, 50, 0, 0
+	element1, overlay, surface2000.png, 0, 0
+	animation2000.interval, talk
+	animation2000.pattern0, overlay, 2001, 0, 0, 0
+	animation2000.pattern1, overlay, -1, 80, 0, 0
+	animation2000.pattern2, overlay, 2002, 80, 0, 0
+	animation2000.pattern3, overlay, -1, 80, 0, 0
+	
+	element2, overlay, surface3002.png, 0, 0
+}
+
+//  うわのそら
+surface12.append
+{
+	element1, overlay, surface2000.png, 0, 0
+	animation2000.interval, talk
+	animation2000.pattern0, overlay, 2001, 0, 0, 0
+	animation2000.pattern1, overlay, -1, 80, 0, 0
+	animation2000.pattern2, overlay, 2002, 80, 0, 0
+	animation2000.pattern3, overlay, -1, 80, 0, 0
+	
+	animation3000.interval, runonce+random, 6
+	animation3000.pattern0, overlay, 3010, 0, 0, 0
+	animation3000.pattern1, overlay, 3011, 50, 0, 0
+	animation3000.pattern2, overlay, 3002, 100, 0, 0
+	animation3000.pattern3, overlay, 3011, 50, 0, 0
+	animation3000.pattern4, overlay, 3010, 50, 0, 0
 }
 
 // 焦り
-surface12.append
+surface13.append
 {
-  // 口
-  element1, base, surface2040.png, 0, 0
-  animation2000.interval, talk
-  animation2000.pattern0, overlay, 2021, 0, 0, 0
-  animation2000.pattern1, overlay, -1, 80, 0, 0
-  animation2000.pattern2, overlay, 2022, 80, 0, 0
-  animation2000.pattern3, overlay, -1, 80, 0, 0
-  // 目
-  animation3000.interval, runonce+random, 6
-  animation3000.pattern0, overlay, 3080, 0, 0, 0
-  animation3000.pattern1, overlay, 3081, 50, 0, 0
-  animation3000.pattern2, overlay, 3002, 100, 0, 0
-  animation3000.pattern3, overlay, 3081, 50, 0, 0
-  animation3000.pattern4, overlay, 3080, 50, 0, 0
+	element1, overlay, surface2020.png, 0, 0
+	animation2000.interval, talk
+	animation2000.pattern0, overlay, 2021, 0, 0, 0
+	animation2000.pattern1, overlay, -1, 80, 0, 0
+	animation2000.pattern2, overlay, 2011, 80, 0, 0
+	animation2000.pattern3, overlay, -1, 80, 0, 0
+	
+	animation3000.interval, runonce+random, 6
+	animation3000.pattern0, overlay, 3090, 0, 0, 0
+	animation3000.pattern1, overlay, 3091, 50, 0, 0
+	animation3000.pattern2, overlay, 3082, 100, 0, 0
+	animation3000.pattern3, overlay, 3091, 50, 0, 0
+	animation3000.pattern4, overlay, 3090, 50, 0, 0
 }
+
+// 信頼
+surface14.append
+{
+	element1, overlay, surface2000.png, 0, 0
+	animation2000.interval, talk
+	animation2000.pattern0, overlay, 2001, 0, 0, 0
+	animation2000.pattern1, overlay, -1, 80, 0, 0
+	animation2000.pattern2, overlay, 2002, 80, 0, 0
+	animation2000.pattern3, overlay, -1, 80, 0, 0
+	
+	animation3000.interval, runonce+random, 6
+	animation3000.pattern0, overlay, 3040, 0, 0, 0
+	animation3000.pattern1, overlay, 3041, 50, 0, 0
+	animation3000.pattern2, overlay, 3002, 100, 0, 0
+	animation3000.pattern3, overlay, 3041, 50, 0, 0
+	animation3000.pattern4, overlay, 3040, 50, 0, 0
+}
+
+// ふてくされ
+surface15.append
+{
+	element1, overlay, surface2010.png, 0, 0
+	animation2000.interval, talk
+	animation2000.pattern0, overlay, 2011, 0, 0, 0
+	animation2000.pattern1, overlay, -1, 80, 0, 0
+	animation2000.pattern2, overlay, 2012, 80, 0, 0
+	animation2000.pattern3, overlay, -1, 80, 0, 0
+	
+	animation3000.interval, runonce+random, 6
+	animation3000.pattern0, overlay, 3070, 0, 0, 0
+	animation3000.pattern1, overlay, 3071, 50, 0, 0
+	animation3000.pattern2, overlay, 3072, 100, 0, 0
+	animation3000.pattern3, overlay, 3071, 50, 0, 0
+	animation3000.pattern4, overlay, 3070, 50, 0, 0
+}
+
+// あちゃー
+surface16.append
+{
+	element1, overlay, surface2000.png, 0, 0
+	animation2000.interval, talk
+	animation2000.pattern0, overlay, 2001, 0, 0, 0
+	animation2000.pattern1, overlay, -1, 80, 0, 0
+	animation2000.pattern2, overlay, 2002, 80, 0, 0
+	animation2000.pattern3, overlay, -1, 80, 0, 0
+	
+	element2, overlay, surface3052.png, 0, 0
+}
+
+//  ちょいどや
+surface17.append
+{
+	element1, overlay, surface2030.png, 0, 0
+	animation2000.interval, talk
+	animation2000.pattern0, overlay, 2031, 0, 0, 0
+	animation2000.pattern1, overlay, -1, 80, 0, 0
+	animation2000.pattern2, overlay, 2002, 80, 0, 0
+	animation2000.pattern3, overlay, -1, 80, 0, 0
+	
+	animation3000.interval, runonce+random, 6
+	animation3000.pattern0, overlay, 3040, 0, 0, 0
+	animation3000.pattern1, overlay, 3041, 50, 0, 0
+	animation3000.pattern2, overlay, 3002, 100, 0, 0
+	animation3000.pattern3, overlay, 3041, 50, 0, 0
+	animation3000.pattern4, overlay, 3040, 50, 0, 0
+}
+
+//  しょんぼり
+surface18.append
+{
+	element1, overlay, surface2020.png, 0, 0
+	animation2000.interval, talk
+	animation2000.pattern0, overlay, 2021, 0, 0, 0
+	animation2000.pattern1, overlay, -1, 80, 0, 0
+	animation2000.pattern2, overlay, 2011, 80, 0, 0
+	animation2000.pattern3, overlay, -1, 80, 0, 0
+	
+	animation3000.interval, runonce+random, 6
+	animation3000.pattern0, overlay, 3080, 0, 0, 0
+	animation3000.pattern1, overlay, 3081, 50, 0, 0
+	animation3000.pattern2, overlay, 3082, 100, 0, 0
+	animation3000.pattern3, overlay, 3081, 50, 0, 0
+	animation3000.pattern4, overlay, 3080, 50, 0, 0
+}
+
+//  がっくし
+surface19.append
+{
+	element1, overlay, surface2010.png, 0, 0
+	animation2000.interval, talk
+	animation2000.pattern0, overlay, 2011, 0, 0, 0
+	animation2000.pattern1, overlay, -1, 80, 0, 0
+	animation2000.pattern2, overlay, 2012, 80, 0, 0
+	animation2000.pattern3, overlay, -1, 80, 0, 0
+	
+	element2, overlay, surface3082.png, 0, 0
+}
+
+// 真顔
+surface20.append
+{
+	element1, overlay, surface2010.png, 0, 0
+	animation2000.interval, talk
+	animation2000.pattern0, overlay, 2011, 0, 0, 0
+	animation2000.pattern1, overlay, -1, 80, 0, 0
+	animation2000.pattern2, overlay, 2012, 80, 0, 0
+	animation2000.pattern3, overlay, -1, 80, 0, 0
+	
+	animation3000.interval, runonce+random, 6
+	animation3000.pattern0, overlay, 3000, 0, 0, 0
+	animation3000.pattern1, overlay, 3001, 50, 0, 0
+	animation3000.pattern2, overlay, 3002, 100, 0, 0
+	animation3000.pattern3, overlay, 3001, 50, 0, 0
+	animation3000.pattern4, overlay, 3000, 50, 0, 0
+}
+

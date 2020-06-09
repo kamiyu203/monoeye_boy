@@ -77,3 +77,6 @@ surface0023.png
 surface0024.png
 surface0025.png
 surface0030.png
+
+surface2040.png
+surface5000.png

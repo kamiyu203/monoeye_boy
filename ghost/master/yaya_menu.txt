@@ -22,7 +22,7 @@ OpenMenu
 	＠改行多めメニュー：トーク頻度の設定｜Menu_TALKINTERVAL
 	＠メニュー【tell_name==1】：呼び名を変える｜Menu_TELLNAME
 	＠メニュー【rank<=1】：性別設定｜Menu_ChangeSex
-	＠改行多めメニュー【rank!=0 && ISFUNC("イベント" + month + "月" + day + "日")==1 && todays_event==0】：今日は何の日？｜SpecialDay
+	＠改行多めメニュー【rank!=0 && ISFUNC("イベント" + month + "月" + day + "日")==1 && 今日のイベント==0】：今日は何の日？｜SpecialDay
 
 	＠改行多めメニュー：閉じる｜Menu_CANCEL
 	">>
@@ -165,7 +165,7 @@ Menu_ChangeSex
 Male
 {
 	if username == "お姉" {
-		username == "お兄"
+		username = "お兄"
 	}
 	--
 	<<"
@@ -177,7 +177,7 @@ Male
 Female
 {
 	if username == "お兄" {
-		username == "お姉"
+		username = "お姉"
 	}
 	--
 	<<"
@@ -285,7 +285,7 @@ Omoide_CtoB {
 	クリック待ちユ：水野\w9 ルイ…？\w9
 	真0：ああ、それは芸名なんだ。\w9
 	\n[half]本名は、真人（まなと）\w9っていいます。\w9
-	真11：改めてよろしくね。
+	真14：改めてよろしくね。
 	">>
 }
 

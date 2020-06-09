@@ -1,11 +1,11 @@
 charset,Shift_JIS
 
 craftman,Kamiyu
-craftmanw,かみゆ
+craftmanw,カミユ
 craftmanurl,http://kamiyu203.stars.ne.jp/
 
-id,master
-name,master
+id,new
+name,new
 type,shell
 
 seriko.use_self_alpha,1
@@ -20,17 +20,13 @@ kero.balloon.alignment,right
 kero.balloon.offsetx,300
 kero.balloon.offsety,250
 
-
-sakura.bindoption.group,髪,mustselect
-sakura.bindgroup5000.name,髪,やわらかブロンド,
-sakura.bindgroup5000.default,1
-
 sakura.bindoption.group,服,mustselect
 sakura.bindgroup1000.name,服,いつものオレンジ,
-sakura.bindgroup1000.default,1
-sakura.bindgroup1001.name,服,こないだのオレンジ,
-sakura.bindgroup1002.name,服,冬支度
-sakura.bindgroup1003.name,服,さわやかストライプ
+sakura.bindgroup1000.default, 1
+
+sakura.bindoption.group,髪,mustselect
+sakura.bindgroup4000.name,髪,やわらかブロンド,
+sakura.bindgroup4000.default,1
 
 menu.background.bitmap.filename,menu_background.png
 menu.foreground.bitmap.filename,menu_foreground.png
