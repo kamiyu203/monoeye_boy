@@ -21,8 +21,8 @@
 
   _now = GETTIME()
   if _now[0] != lastTime[0] || _now[1] != lastTime[1] || _now[2] != lastTime[2] {
-    今日のイベント = 0
-    話題決定 = 0
+    todays_event = 0
+    todays_topics= 0
   }
 }
 
