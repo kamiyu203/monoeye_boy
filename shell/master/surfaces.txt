@@ -55,6 +55,8 @@ surface0-9,11-24
 
 	animation1000.interval, bind
 	animation1000.pattern0, overlay, 1000, 0, 0, 0
+	animation1001.interval, bind
+	animation1001.pattern0, overlay, 1001, 0, 0, 0
 
 	animation4000.interval, bind
 	animation4000.pattern0, overlay, 4000, 0, 0, 0
