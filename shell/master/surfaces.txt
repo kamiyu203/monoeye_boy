@@ -24,7 +24,7 @@ descript
 //**************************************
 
 // 当たり判定
-surface0-9,11-20.append
+surface0-9,11-20
 {
 	collision0, 340, 20, 520, 90, Head
 	collision1, 400, 90, 480, 180, Face
@@ -44,7 +44,7 @@ sakura.cursor
 //**************************************
 // ベース
 //**************************************
-surface0-9,11-24
+surface0-9,11-20
 {
 	element0, base, surface100.png, 0, 0
 
@@ -66,7 +66,7 @@ surface0-9,11-24
 // 表情
 //**************************************
 // 標準
-surface0.append
+surface0
 {
 	element1, overlay, surface2000.png, 0, 0
 	animation2000.interval, talk
@@ -84,7 +84,7 @@ surface0.append
 }
 
 //  集中
-surface1.append
+surface1
 {
 	element1, overlay, surface2010.png, 0, 0
 	animation2000.interval, talk
@@ -97,7 +97,7 @@ surface1.append
 }
 
 // 目そらし
-surface2.append
+surface2
 {
 	element1, overlay, surface2010.png, 0, 0
 	animation2000.interval, talk
@@ -115,7 +115,7 @@ surface2.append
 }
 
 // 驚き
-surface3.append
+surface3
 {
 	element1, overlay, surface2010.png, 0, 0
 	animation2000.interval, talk
@@ -133,7 +133,7 @@ surface3.append
 }
 
 // 笑顔
-surface4.append
+surface4
 {
 	element1, overlay, surface2000.png, 0, 0
 	animation2000.interval, talk
@@ -146,7 +146,7 @@ surface4.append
 }
 
 // ジト
-surface5.append
+surface5
 {
 	element1, overlay, surface2010.png, 0, 0
 	animation2000.interval, talk
@@ -164,7 +164,7 @@ surface5.append
 }
 
 //  苦笑
-surface6.append
+surface6
 {
 	element1, overlay, surface2000.png, 0, 0
 	animation2000.interval, talk
@@ -182,7 +182,7 @@ surface6.append
 }
 
 //  どや
-surface7.append
+surface7
 {
 	element1, overlay, surface2030.png, 0, 0
 	animation2000.interval, talk
@@ -195,7 +195,7 @@ surface7.append
 }
 
 //  寂しげ
-surface8.append
+surface8
 {
 	element1, overlay, surface2010.png, 0, 0
 	animation2000.interval, talk
@@ -213,7 +213,7 @@ surface8.append
 }
 
 // 呆れ
-surface9.append
+surface9
 {
 	element1, overlay, surface2020.png, 0, 0
 	animation2000.interval, talk
@@ -232,7 +232,7 @@ surface9.append
 
 //**************************************
 // 鼻歌
-surface11.append
+surface11
 {
 	element1, overlay, surface2000.png, 0, 0
 	animation2000.interval, talk
@@ -245,7 +245,7 @@ surface11.append
 }
 
 //  うわのそら
-surface12.append
+surface12
 {
 	element1, overlay, surface2000.png, 0, 0
 	animation2000.interval, talk
@@ -263,7 +263,7 @@ surface12.append
 }
 
 // 焦り
-surface13.append
+surface13
 {
 	element1, overlay, surface2020.png, 0, 0
 	animation2000.interval, talk
@@ -281,7 +281,7 @@ surface13.append
 }
 
 // 信頼
-surface14.append
+surface14
 {
 	element1, overlay, surface2000.png, 0, 0
 	animation2000.interval, talk
@@ -299,7 +299,7 @@ surface14.append
 }
 
 // ふてくされ
-surface15.append
+surface15
 {
 	element1, overlay, surface2010.png, 0, 0
 	animation2000.interval, talk
@@ -317,7 +317,7 @@ surface15.append
 }
 
 // あちゃー
-surface16.append
+surface16
 {
 	element1, overlay, surface2000.png, 0, 0
 	animation2000.interval, talk
@@ -330,7 +330,7 @@ surface16.append
 }
 
 //  ちょいどや
-surface17.append
+surface17
 {
 	element1, overlay, surface2030.png, 0, 0
 	animation2000.interval, talk
@@ -348,7 +348,7 @@ surface17.append
 }
 
 //  しょんぼり
-surface18.append
+surface18
 {
 	element1, overlay, surface2020.png, 0, 0
 	animation2000.interval, talk
@@ -366,7 +366,7 @@ surface18.append
 }
 
 //  がっくし
-surface19.append
+surface19
 {
 	element1, overlay, surface2010.png, 0, 0
 	animation2000.interval, talk
@@ -379,7 +379,7 @@ surface19.append
 }
 
 // 真顔
-surface20.append
+surface20
 {
 	element1, overlay, surface2010.png, 0, 0
 	animation2000.interval, talk

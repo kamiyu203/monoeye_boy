@@ -61,7 +61,7 @@
 }
 
 // bro M
-＊bro_Mへ変更 {
+＊bro.Mへ変更 {
 	if (rank >= 3 && ChangeTo_bro_M == 0) {
 		<<"
 		真3：\tえ、(ユーザ)さんって、弟がいるんだ！\w9
@@ -84,7 +84,7 @@
 	}
 }
 
-＊bro_Mから変更 {
+＊bro.Mから変更 {
 	if (rank >= 3 && ChangeTo_bro_M == 1) {
 		<<"
 		真3：おー、（ユーザ）さん。\w9
