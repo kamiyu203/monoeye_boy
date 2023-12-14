@@ -17,7 +17,7 @@ On_username
 //------------------------------------------------------------------------------
 On_homeurl
 {
-	"https://raw.githubusercontent.com/kamiyup/monoeye_boy/master/"
+	"https://raw.githubusercontent.com/kamiyu203/monoeye_boy/master/"
 }
 
 //------------------------------------------------------------------------------
@@ -34,7 +34,7 @@ On_portalrootbutton.caption
 ポータルサイト
 {
 	<<"
-	作者サイト | http://kamiyu203.stars.ne.jp/
+	作者サイト | https://kamiyu203.com/
 	-              |"
 	SSP BUGTRAQ      | http://ssp.shillest.net/|
 	-              |"

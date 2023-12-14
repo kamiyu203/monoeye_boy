@@ -2,7 +2,7 @@ charset,Shift_JIS
 
 craftman,Kamiyu
 craftmanw,ƒJƒ~ƒ†
-craftmanurl,http://kamiyu203.stars.ne.jp/
+craftmanurl,https://kamiyu203.com/
 
 id,master
 name,master

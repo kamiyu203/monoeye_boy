@@ -1,8 +1,8 @@
 charset,Shift_JIS
 
 craftman,Kamiyu
-craftmanw,かみゆ
-craftmanurl,http://kamiyu203.stars.ne.jp/
+craftmanw,カミユ
+craftmanurl,https://kamiyu203.com/
 
 name,単眼男子
 type,ghost

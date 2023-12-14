@@ -126,7 +126,7 @@
 //ランダムトーク
 キー入力C
 {
-	if rank >= 2 {Menu_Communicate}
+	if rank >= 2 {"\![open,communicatebox]"}
 }
 
 //メニュー
